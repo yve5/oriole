@@ -1,19 +1,8 @@
-# CVSS v4 Calculator
+# React + Vite
 
-## Pitch
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project proposes a CVSS v4.0 calculator with [Create React App](https://github.com/facebook/create-react-app).
+Currently, two official plugins are available:
 
-## Scripts
-
-| Script             | Desription                                                                    |
-| :----------------- | :---------------------------------------------------------------------------- |
-| `npm start`        | Runs the app in the development mode.                                         |
-| `npm test`         | Launches the test runner in the interactive watch mode.                       |
-| `npm run coverage` | Launches the test runner in order to generate a project full coverage report. |
-| `npm run build`    | Builds the app for production to the `build` folder.                          |
-| `npm run deploy`   | Deploy the `build` folder content in Github project page.                     |
-
-## Source
-
-[Original CVSS v4.0 calculator](https://github.com/RedHatProductSecurity/cvss-v4-calculator/tree/main).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
