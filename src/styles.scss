@@ -1,1 +1,59 @@
+@import 'bootstrap/scss/functions';
+
+$white: #fff !default;
+$gray-100: #fafafa !default;
+$gray-200: #f6f6f6 !default;
+$gray-300: #eee !default;
+$gray-400: #ddd !default;
+$gray-500: #ccc !default;
+$gray-600: #999 !default;
+$gray-700: #666 !default;
+$gray-800: #595959 !default;
+$gray-900: #333 !default;
+$black: #000 !default;
+
+$blue: #527edb;
+$indigo: #a885d8;
+$purple: #a885d8;
+$pink: #ffb4e6;
+$red: #cd3c14;
+$orange: #ff7900;
+$yellow: #fc0;
+$green: #32c832;
+$teal: #32c832;
+$cyan: #4bb4e6;
+
+$primary: $orange !default;
+$secondary: $black !default;
+$success: $green !default;
+$info: $black !default;
+$warning: $orange !default;
+$danger: $red !default;
+$light: $black !default;
+$dark: $black !default;
+
+$font-family-sans-serif: HelvNeueOrange#{'/*rtl:insert:Arabic*/'},
+  'Helvetica Neue', Helvetica, 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+
+// $body-bg: $gray-300;
+$body-bg: $gray-100;
+
+$border-radius: 0;
+$border-width: 0.125rem;
+
+// $card-border-width: 0;
+// $card-color: $white;
+
+@import 'bootstrap/scss/variables';
+
+$btn-font-weight: $font-weight-bold;
+
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/root';
+
 @import 'bootstrap/scss/bootstrap';
