@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Paging = () => (
   <div className="card mt-3">
     <div className="card-header">Paging</div>
@@ -34,7 +36,7 @@ const Paging = () => (
           </tbody>
         </table>
 
-        <nav aria-label="Page navigation">
+        <nav>
           <ul className="pagination">
             {['Previous', '1', '2', '3', 'Next'].map((item) => (
               <li className="page-item" key={item}>

@@ -1,5 +1,5 @@
+import React, { Fragment } from 'react';
 import Confetti from 'canvas-confetti';
-import { Fragment } from 'react';
 
 const buttons = [
   { title: 'Primary', suffix: 'primary' },
