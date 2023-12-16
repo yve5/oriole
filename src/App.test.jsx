@@ -1,34 +1,30 @@
 import React from 'react';
-import { describe, expect, it } from 'vitest';
+import { expect, test, vi } from 'vitest';
 
-// import configureMockStore from 'redux-mock-store';
 import { render, screen } from '@testing-library/react';
-// import { Provider } from 'react-redux';
-// import { act, create } from 'react-test-renderer';
+import { act, create } from 'react-test-renderer';
 
 import App from './App';
-// import store from '../resources/store';
 
-export function sum(a, b) {
-  return a + b;
-}
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Home/i);
+  expect(linkElement).not.toBeNull();
+});
 
-describe('skipped suite', () => {
-  it('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+test('should match expected snapshot', () => {
+  HTMLCanvasElement.prototype.getContext = vi.fn();
+  const component = create(<App />);
+
+  act(() => {
+    component.update(<App />);
   });
 
-  it('renders learn react link', () => {
-    render(<App />);
-    //   const linkElement = screen.getByText(/Oriole/i);
-    //   expect(linkElement).toBeInTheDocument();
-  });
-
-  // test('renders learn react link', () => {
-  //   // <Provider store={store}>
-  //   //   </Provider>
-  //   render(<App />);
-  //   const linkElement = screen.getByText(/Oriole/i);
-  //   expect(linkElement).toBeInTheDocument();
+  // act(() => {
+  //   component.root
+  //     .findAllByProps({ 'data-testid': 'button-demo' })[0]
+  //     .props.onClick();
   // });
+
+  expect(component.toJSON()).toMatchSnapshot();
 });
