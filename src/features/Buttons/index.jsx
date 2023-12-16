@@ -31,6 +31,7 @@ const Buttons = () => (
         {buttons.map(({ title, suffix }) => (
           <button
             className={`btn btn-${suffix} me-2 mb-2`}
+            data-testid="button-demo"
             onClick={() =>
               Confetti({
                 particleCount: 100,

@@ -1,0 +1,388 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match expected snapshot 1`] = `
+[
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-dark mb-3"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="navbar-brand"
+      >
+        <img
+          alt="Oriole"
+          height="16"
+          loading="lazy"
+          src="/oriole/src/assets/logo.svg"
+          width="16"
+        />
+      </div>
+      <button
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-bs-target="#navbarNav"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        id="navbarNav"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="nav-item"
+          >
+            <span
+              aria-current="page"
+              className="nav-link active"
+            >
+              Home
+            </span>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <span
+              className="nav-link"
+            >
+              Features
+            </span>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <span
+              className="nav-link"
+            >
+              Pricing
+            </span>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <span
+              aria-disabled="true"
+              className="nav-link disabled"
+            >
+              Disabled
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="container"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header"
+      >
+        Buttons
+      </div>
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="list-group-item"
+        >
+          <button
+            className="btn btn-primary me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Primary
+          </button>
+          <button
+            className="btn btn-outline-secondary me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Secondary
+          </button>
+          <button
+            className="btn btn-success me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Success
+          </button>
+          <button
+            className="btn btn-danger me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Danger
+          </button>
+          <button
+            className="btn btn-warning me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Warning
+          </button>
+          <button
+            className="btn btn-info me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Info
+          </button>
+          <button
+            className="btn btn-outline-light me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Light
+          </button>
+          <button
+            className="btn btn-dark me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Dark
+          </button>
+          <button
+            className="btn btn-link me-2 mb-2"
+            data-testid="button-demo"
+            onClick={[Function]}
+            type="button"
+          >
+            Link
+          </button>
+        </li>
+        <li
+          className="list-group-item bg-light-subtle"
+        >
+          <code>
+            &lt;button className="btn btn-
+            primary
+            " type="button"&gt;
+            Primary
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            outline-secondary
+            " type="button"&gt;
+            Secondary
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            success
+            " type="button"&gt;
+            Success
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            danger
+            " type="button"&gt;
+            Danger
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            warning
+            " type="button"&gt;
+            Warning
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            info
+            " type="button"&gt;
+            Info
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            outline-light
+            " type="button"&gt;
+            Light
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            dark
+            " type="button"&gt;
+            Dark
+            &lt;/button&gt;
+            <br />
+            &lt;button className="btn btn-
+            link
+            " type="button"&gt;
+            Link
+            &lt;/button&gt;
+            <br />
+          </code>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="card mt-3"
+    >
+      <div
+        className="card-header"
+      >
+        Paging
+      </div>
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="list-group-item"
+        >
+          <table
+            className="table"
+          >
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                >
+                  #
+                </th>
+                <th
+                  scope="col"
+                >
+                  First
+                </th>
+                <th
+                  scope="col"
+                >
+                  Last
+                </th>
+                <th
+                  scope="col"
+                >
+                  Handle
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th
+                  scope="row"
+                >
+                  1
+                </th>
+                <td>
+                  Mark
+                </td>
+                <td>
+                  Otto
+                </td>
+                <td>
+                  @mdo
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                >
+                  2
+                </th>
+                <td>
+                  Jacob
+                </td>
+                <td>
+                  Thornton
+                </td>
+                <td>
+                  @fat
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                >
+                  3
+                </th>
+                <td
+                  colSpan="2"
+                >
+                  Larry the Bird
+                </td>
+                <td>
+                  @twitter
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav>
+            <ul
+              className="pagination"
+            >
+              <li
+                className="page-item"
+              >
+                <button
+                  className="page-link"
+                  type="button"
+                >
+                  Previous
+                </button>
+              </li>
+              <li
+                className="page-item"
+              >
+                <button
+                  className="page-link"
+                  type="button"
+                >
+                  1
+                </button>
+              </li>
+              <li
+                className="page-item"
+              >
+                <button
+                  className="page-link"
+                  type="button"
+                >
+                  2
+                </button>
+              </li>
+              <li
+                className="page-item"
+              >
+                <button
+                  className="page-link"
+                  type="button"
+                >
+                  3
+                </button>
+              </li>
+              <li
+                className="page-item"
+              >
+                <button
+                  className="page-link"
+                  type="button"
+                >
+                  Next
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;
