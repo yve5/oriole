@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Paging = () => (
-  <div className="card mt-3">
-    <div className="card-header">Paging</div>
-
+  <div className="card">
     <ul className="list-group list-group-flush">
       <li className="list-group-item">
         <table className="table">
