@@ -24,8 +24,6 @@ const buttons = [
 
 const Buttons = () => (
   <div className="card">
-    <div className="card-header">Buttons</div>
-
     <ul className="list-group list-group-flush">
       <li className="list-group-item">
         {buttons.map(({ title, suffix }) => (

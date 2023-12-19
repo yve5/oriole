@@ -1,20 +1,21 @@
 import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import Buttons from './features/Buttons';
-import Header from './features/Header';
-import Paging from './features/Paging';
+import Layout from './features/Layout';
+import Paging from './routes/Paging';
+import Buttons from './routes/Buttons';
 
 import './styles.scss';
 
 const App = () => (
-  <>
-    <Header />
-
-    <div className="container">
-      <Buttons />
-      <Paging />
-    </div>
-  </>
+  <HashRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Paging />} />
+        <Route path="buttons" element={<Buttons />} />
+      </Route>
+    </Routes>
+  </HashRouter>
 );
 
 export default App;
