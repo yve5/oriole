@@ -13,5 +13,6 @@ export default defineConfig({
       ...configDefaults.coverage,
       exclude: [...configDefaults.coverage.exclude, 'src/main.jsx'],
     },
+    setupFiles: 'src/setupTests.js',
   },
 });

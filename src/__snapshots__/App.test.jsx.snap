@@ -2,23 +2,98 @@
 
 exports[`should match expected snapshot 1`] = `
 [
+  <header
+    className="sticky-top header-minimized"
+  >
+    <nav
+      aria-label="Main navigation"
+      className="navbar navbar-dark bg-dark navbar-expand-lg"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="navbar-brand me-auto me-lg-4"
+        >
+          <span
+            className="stretched-link"
+          >
+            <img
+              alt="Boosted - Back to Home"
+              height="50"
+              loading="lazy"
+              src="/oriole/src/assets/logo.svg"
+              width="50"
+            />
+          </span>
+        </div>
+        <button
+          aria-controls="bd-navbar1 bd-navbar2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="navbar-toggler collapsed"
+          data-bs-target=".bd-navbar"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          className="navbar-collapse collapse me-lg-auto bd-navbar mb-0 border-0"
+        >
+          <ul
+            className="navbar-nav"
+          >
+            <li
+              className="nav-item"
+            >
+              <span
+                className="nav-link"
+              >
+                Home
+              </span>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <span
+                aria-current="true"
+                className="nav-link active"
+              >
+                Docs
+              </span>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <span
+                className="nav-link"
+              >
+                Examples
+              </span>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <span
+                className="nav-link"
+              >
+                Guidelines
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>,
   <nav
     className="navbar navbar-expand-lg navbar-dark bg-dark mb-5"
   >
     <div
       className="container-fluid"
     >
-      <div
-        className="navbar-brand"
-      >
-        <img
-          alt="Oriole"
-          height="16"
-          loading="lazy"
-          src="/oriole/src/assets/logo.svg"
-          width="16"
-        />
-      </div>
       <button
         className="navbar-toggler"
         type="button"
