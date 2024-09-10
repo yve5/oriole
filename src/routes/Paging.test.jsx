@@ -1,15 +1,12 @@
 import React from 'react';
-import { act, create } from 'react-test-renderer';
-import { vi } from 'vitest';
+import { act, render } from '@testing-library/react';
 
 import Paging from './Paging';
 
-test('should match expected snapshot', () => {
-  const component = create(<Paging />);
-
-  act(() => {
-    component.update(<Paging />);
+describe('Paging', () => {
+  it('should match expected snapshot', async () => {
+    const { asFragment, rerender } = render(<Paging />);
+    rerender(<Paging />);
+    expect(asFragment()).toMatchSnapshot();
   });
-
-  expect(component.toJSON()).toMatchSnapshot();
 });

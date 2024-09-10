@@ -1,22 +1,22 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should match expected snapshot 1`] = `
-[
+exports[`App > should match expected snapshot 1`] = `
+<DocumentFragment>
   <header
-    className="sticky-top header-minimized"
+    class="sticky-top header-minimized"
   >
     <nav
       aria-label="Main navigation"
-      className="navbar navbar-dark bg-dark navbar-expand-lg"
+      class="navbar navbar-dark bg-dark navbar-expand-lg"
     >
       <div
-        className="container-fluid"
+        class="container-fluid"
       >
         <div
-          className="navbar-brand me-auto me-lg-4"
+          class="navbar-brand me-auto me-lg-4"
         >
           <span
-            className="stretched-link"
+            class="stretched-link"
           >
             <img
               alt="Boosted - Back to Home"
@@ -31,54 +31,54 @@ exports[`should match expected snapshot 1`] = `
           aria-controls="bd-navbar1 bd-navbar2"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          className="navbar-toggler collapsed"
+          class="navbar-toggler collapsed"
           data-bs-target=".bd-navbar"
           data-bs-toggle="collapse"
           type="button"
         >
           <span
-            className="navbar-toggler-icon"
+            class="navbar-toggler-icon"
           />
         </button>
         <div
-          className="navbar-collapse collapse me-lg-auto bd-navbar mb-0 border-0"
+          class="navbar-collapse collapse me-lg-auto bd-navbar mb-0 border-0"
         >
           <ul
-            className="navbar-nav"
+            class="navbar-nav"
           >
             <li
-              className="nav-item"
+              class="nav-item"
             >
               <span
-                className="nav-link"
+                class="nav-link"
               >
                 Home
               </span>
             </li>
             <li
-              className="nav-item"
+              class="nav-item"
             >
               <span
                 aria-current="true"
-                className="nav-link active"
+                class="nav-link active"
               >
                 Docs
               </span>
             </li>
             <li
-              className="nav-item"
+              class="nav-item"
             >
               <span
-                className="nav-link"
+                class="nav-link"
               >
                 Examples
               </span>
             </li>
             <li
-              className="nav-item"
+              class="nav-item"
             >
               <span
-                className="nav-link"
+                class="nav-link"
               >
                 Guidelines
               </span>
@@ -87,45 +87,43 @@ exports[`should match expected snapshot 1`] = `
         </div>
       </div>
     </nav>
-  </header>,
+  </header>
   <nav
-    className="navbar navbar-expand-lg navbar-dark bg-dark mb-5"
+    class="navbar navbar-expand-lg navbar-dark bg-dark mb-5"
   >
     <div
-      className="container-fluid"
+      class="container-fluid"
     >
       <button
-        className="navbar-toggler"
+        class="navbar-toggler"
         type="button"
       >
         <span
-          className="navbar-toggler-icon"
+          class="navbar-toggler-icon"
         />
       </button>
       <div
-        className="collapse navbar-collapse"
+        class="collapse navbar-collapse"
       >
         <ul
-          className="navbar-nav"
+          class="navbar-nav"
         >
           <li
-            className="nav-item"
+            class="nav-item"
           >
             <a
-              className="nav-link"
+              class="nav-link"
               href="#/"
-              onClick={[Function]}
             >
               Paging
             </a>
           </li>
           <li
-            className="nav-item"
+            class="nav-item"
           >
             <a
-              className="nav-link"
+              class="nav-link"
               href="#/buttons"
-              onClick={[Function]}
             >
               Buttons
             </a>
@@ -133,21 +131,21 @@ exports[`should match expected snapshot 1`] = `
         </ul>
       </div>
     </div>
-  </nav>,
+  </nav>
   <div
-    className="container"
+    class="container"
   >
     <div
-      className="card"
+      class="card"
     >
       <ul
-        className="list-group list-group-flush"
+        class="list-group list-group-flush"
       >
         <li
-          className="list-group-item"
+          class="list-group-item"
         >
           <table
-            className="table"
+            class="table"
           >
             <thead>
               <tr>
@@ -213,7 +211,7 @@ exports[`should match expected snapshot 1`] = `
                   3
                 </th>
                 <td
-                  colSpan="2"
+                  colspan="2"
                 >
                   Larry the Bird
                 </td>
@@ -225,53 +223,53 @@ exports[`should match expected snapshot 1`] = `
           </table>
           <nav>
             <ul
-              className="pagination"
+              class="pagination"
             >
               <li
-                className="page-item"
+                class="page-item"
               >
                 <button
-                  className="page-link"
+                  class="page-link"
                   type="button"
                 >
                   Previous
                 </button>
               </li>
               <li
-                className="page-item"
+                class="page-item"
               >
                 <button
-                  className="page-link"
+                  class="page-link"
                   type="button"
                 >
                   1
                 </button>
               </li>
               <li
-                className="page-item"
+                class="page-item"
               >
                 <button
-                  className="page-link"
+                  class="page-link"
                   type="button"
                 >
                   2
                 </button>
               </li>
               <li
-                className="page-item"
+                class="page-item"
               >
                 <button
-                  className="page-link"
+                  class="page-link"
                   type="button"
                 >
                   3
                 </button>
               </li>
               <li
-                className="page-item"
+                class="page-item"
               >
                 <button
-                  className="page-link"
+                  class="page-link"
                   type="button"
                 >
                   Next
@@ -282,6 +280,6 @@ exports[`should match expected snapshot 1`] = `
         </li>
       </ul>
     </div>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

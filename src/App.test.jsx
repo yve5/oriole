@@ -1,21 +1,17 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { act, create } from 'react-test-renderer';
+import { act, render } from '@testing-library/react';
 
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Paging/i);
-  expect(linkElement).not.toBeNull();
-});
-
-test('should match expected snapshot', () => {
-  const component = create(<App />);
-
-  act(() => {
-    component.update(<App />);
+describe('App', () => {
+  it('renders learn react link', () => {
+    const { getByText } = render(<App />);
+    expect(getByText('Paging')).not.toBeNull();
   });
 
-  expect(component.toJSON()).toMatchSnapshot();
+  it('should match expected snapshot', () => {
+    const { asFragment, rerender } = render(<App />);
+    rerender(<App />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

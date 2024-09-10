@@ -1,21 +1,18 @@
 import React from 'react';
-import { act, create } from 'react-test-renderer';
-import { vi } from 'vitest';
+import { act, fireEvent, render } from '@testing-library/react';
 
 import Buttons from './Buttons';
 
-test('should match expected snapshot', () => {
-  const component = create(<Buttons />);
+describe('Buttons', () => {
+  it('should match expected snapshot', async () => {
+    const { asFragment, getAllByText, rerender } = render(<Buttons />);
 
-  act(() => {
-    component.update(<Buttons />);
+    rerender(<Buttons />);
+
+    await act(async () => {
+      fireEvent.click(getAllByText('Primary')[0]);
+    });
+
+    expect(asFragment()).toMatchSnapshot();
   });
-
-  act(() => {
-    component.root
-      .findAllByProps({ 'data-testid': 'button-demo' })[0]
-      .props.onClick();
-  });
-
-  expect(component.toJSON()).toMatchSnapshot();
 });
