@@ -1,9 +1,9 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import Layout from './features/Layout';
 import Paging from './routes/Paging';
 import Buttons from './routes/Buttons';
+import Layout from './features/Layout';
 
 import './styles.scss';
 

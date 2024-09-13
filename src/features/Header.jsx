@@ -1,119 +1,111 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.svg';
 
-const Header = () => (
-  <>
-    <header className="sticky-top header-minimized">
-      <nav
-        className="navbar navbar-dark bg-dark navbar-expand-lg"
-        aria-label="Main navigation"
-      >
-        <div className="container-fluid">
-          <div className="navbar-brand me-auto me-lg-4">
-            <span className="stretched-link">
-              <img
-                src={Logo}
-                width="50"
-                height="50"
-                alt="Boosted - Back to Home"
-                loading="lazy"
-              />
-            </span>
-          </div>
+import Logo from '../assets/logo.webp';
 
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target=".bd-navbar"
-            aria-controls="bd-navbar1 bd-navbar2"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
+const Header = () => {
+  const [isDarkMode, setDarkMode] = useState(false);
 
-          {/*
-           */}
-          <div className="navbar-collapse collapse me-lg-auto bd-navbar mb-0 border-0">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <span className="nav-link">Home</span>
-              </li>
-              <li className="nav-item">
-                <span className="nav-link active" aria-current="true">
-                  Docs
-                </span>
-              </li>
-              <li className="nav-item">
-                <span className="nav-link">Examples</span>
-              </li>
-              <li className="nav-item">
-                <span className="nav-link">Guidelines</span>
-              </li>
-            </ul>
-          </div>
+  useEffect(() => {
+    const htmlElement = document.documentElement;
 
-          {/*
-          <div
-            id="bd-navbar2"
-            className="navbar-collapse collapse bd-navbar border-0 ms-lg-auto"
-          >
-            <ul className="navbar-nav flex-row">
-              <li className="nav-item">
-                <span className="nav-link nav-icon">
+    htmlElement.setAttribute('data-bs-theme', isDarkMode ? 'dark' : undefined);
+
+    return () => {
+      htmlElement.removeAttribute('data-bs-theme');
+    };
+  }, [isDarkMode]);
+
+  return (
+    <header>
+      <div className="px-3 py-2 mb-4 text-bg-dark border-bottom">
+        <div className="container">
+          <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+            <Link
+              to="/"
+              className="d-flex align-items-center my-2 my-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <img src={Logo} alt="Oriale" title="Oriale" />
+            </Link>
+
+            <ul className="nav col-12 col-md-auto my-2 justify-content-center my-md-0 text-small">
+              <li>
+                <Link to="/" className="nav-link text-white" title="Home">
+                  Paging
+                </Link>
+              </li>
+              <li>
+                <Link
+                  title="Home"
+                  to="/buttons"
+                  className="nav-link text-secondary text-white"
+                >
+                  Buttons
+                </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  title={isDarkMode ? 'Dark' : 'Light'}
+                  onClick={() => setDarkMode(!isDarkMode)}
+                  className="nav-link text-secondary text-white"
+                >
+                  {isDarkMode ? (
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                      className="bi bi-sun"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                  ) : (
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                      className="bi bi-moon"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                    </svg>
+                  )}
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  title="Logout"
+                  className="nav-link text-secondary text-white"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 499.36"
-                    role="img"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    className="bi bi-box-arrow-right"
+                    viewBox="0 0 16 16"
                   >
-                    <title>GitHub</title>
                     <path
-                      fill="currentColor"
                       fillRule="evenodd"
-                      d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
+                      d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
                     />
                   </svg>
-                  <span className="visually-hidden">GitHub</span>
-                </span>
+                </button>
               </li>
             </ul>
           </div>
-          */}
-        </div>
-      </nav>
-    </header>
-
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-      <div className="container-fluid">
-        {/*
-        <div className="navbar-brand">
-        <img loading="lazy" alt="Oriole" height="12" width="12" src={Logo} />
-        </div>
-        */}
-
-        <button className="navbar-toggler" type="button">
-          <span className="navbar-toggler-icon" />
-        </button>
-
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Paging
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/buttons">
-                Buttons
-              </Link>
-            </li>
-          </ul>
         </div>
       </div>
-    </nav>
-  </>
-);
+    </header>
+  );
+};
 
 export default Header;

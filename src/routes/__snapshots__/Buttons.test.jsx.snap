@@ -3,7 +3,7 @@
 exports[`Buttons > should match expected snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="card"
+    class="card mb-4"
   >
     <ul
       class="list-group list-group-flush"
@@ -12,63 +12,49 @@ exports[`Buttons > should match expected snapshot 1`] = `
         class="list-group-item"
       >
         <button
-          class="btn btn-primary me-2 mb-2"
+          class="btn btn-primary me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Primary
         </button>
         <button
-          class="btn btn-outline-secondary me-2 mb-2"
+          class="btn btn-outline-secondary me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Secondary
         </button>
         <button
-          class="btn btn-success me-2 mb-2"
+          class="btn btn-success me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Success
         </button>
         <button
-          class="btn btn-danger me-2 mb-2"
+          class="btn btn-danger me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Danger
         </button>
         <button
-          class="btn btn-warning me-2 mb-2"
+          class="btn btn-warning me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Warning
         </button>
         <button
-          class="btn btn-info me-2 mb-2"
+          class="btn btn-info me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
           Info
         </button>
         <button
-          class="btn btn-outline-light me-2 mb-2"
-          data-testid="button-demo"
-          type="button"
-        >
-          Light
-        </button>
-        <button
-          class="btn btn-dark me-2 mb-2"
-          data-testid="button-demo"
-          type="button"
-        >
-          Dark
-        </button>
-        <button
-          class="btn btn-link me-2 mb-2"
+          class="btn btn-link me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
@@ -79,23 +65,100 @@ exports[`Buttons > should match expected snapshot 1`] = `
         class="list-group-item bg-light-subtle"
       >
         <code>
-          &lt;button className="btn btn-primary" type="button"&gt;Primary&lt;/button&gt;
+          &lt;button className="btn btn-primary btn-sm" type="button"&gt;Primary&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-outline-secondary" type="button"&gt;Secondary&lt;/button&gt;
+          &lt;button className="btn btn-outline-secondary btn-sm" type="button"&gt;Secondary&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-success" type="button"&gt;Success&lt;/button&gt;
+          &lt;button className="btn btn-success btn-sm" type="button"&gt;Success&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-danger" type="button"&gt;Danger&lt;/button&gt;
+          &lt;button className="btn btn-danger btn-sm" type="button"&gt;Danger&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-warning" type="button"&gt;Warning&lt;/button&gt;
+          &lt;button className="btn btn-warning btn-sm" type="button"&gt;Warning&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-info" type="button"&gt;Info&lt;/button&gt;
+          &lt;button className="btn btn-info btn-sm" type="button"&gt;Info&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-outline-light" type="button"&gt;Light&lt;/button&gt;
+          &lt;button className="btn btn-link btn-sm" type="button"&gt;Link&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-dark" type="button"&gt;Dark&lt;/button&gt;
+        </code>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="card mb-4"
+  >
+    <ul
+      class="list-group list-group-flush"
+    >
+      <li
+        class="list-group-item"
+      >
+        <button
+          class="btn btn-primary me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Primary
+        </button>
+        <button
+          class="btn btn-outline-secondary me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Secondary
+        </button>
+        <button
+          class="btn btn-success me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Success
+        </button>
+        <button
+          class="btn btn-danger me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Danger
+        </button>
+        <button
+          class="btn btn-warning me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Warning
+        </button>
+        <button
+          class="btn btn-info me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Info
+        </button>
+        <button
+          class="btn btn-link me-2 mb-2 btn-sm disabled"
+          data-testid="button-demo"
+          type="button"
+        >
+          Link
+        </button>
+      </li>
+      <li
+        class="list-group-item bg-light-subtle"
+      >
+        <code>
+          &lt;button className="btn btn-primary btn-sm disabled" type="button"&gt;Primary&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-link" type="button"&gt;Link&lt;/button&gt;
+          &lt;button className="btn btn-outline-secondary btn-sm disabled" type="button"&gt;Secondary&lt;/button&gt;
+          <br />
+          &lt;button className="btn btn-success btn-sm disabled" type="button"&gt;Success&lt;/button&gt;
+          <br />
+          &lt;button className="btn btn-danger btn-sm disabled" type="button"&gt;Danger&lt;/button&gt;
+          <br />
+          &lt;button className="btn btn-warning btn-sm disabled" type="button"&gt;Warning&lt;/button&gt;
+          <br />
+          &lt;button className="btn btn-info btn-sm disabled" type="button"&gt;Info&lt;/button&gt;
+          <br />
+          &lt;button className="btn btn-link btn-sm disabled" type="button"&gt;Link&lt;/button&gt;
           <br />
         </code>
       </li>

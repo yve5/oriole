@@ -2,136 +2,97 @@
 
 exports[`App > should match expected snapshot 1`] = `
 <DocumentFragment>
-  <header
-    class="sticky-top header-minimized"
-  >
-    <nav
-      aria-label="Main navigation"
-      class="navbar navbar-dark bg-dark navbar-expand-lg"
+  <header>
+    <div
+      class="px-3 py-2 mb-4 text-bg-dark border-bottom"
     >
       <div
-        class="container-fluid"
+        class="container"
       >
         <div
-          class="navbar-brand me-auto me-lg-4"
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start"
         >
-          <span
-            class="stretched-link"
+          <a
+            class="d-flex align-items-center my-2 my-md-0 me-md-auto text-white text-decoration-none"
+            href="#/"
           >
             <img
-              alt="Boosted - Back to Home"
-              height="50"
-              loading="lazy"
-              src="/oriole/src/assets/logo.svg"
-              width="50"
+              alt="Oriale"
+              src="/oriole/src/assets/logo.webp"
+              title="Oriale"
             />
-          </span>
-        </div>
-        <button
-          aria-controls="bd-navbar1 bd-navbar2"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler collapsed"
-          data-bs-target=".bd-navbar"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span
-            class="navbar-toggler-icon"
-          />
-        </button>
-        <div
-          class="navbar-collapse collapse me-lg-auto bd-navbar mb-0 border-0"
-        >
+          </a>
           <ul
-            class="navbar-nav"
+            class="nav col-12 col-md-auto my-2 justify-content-center my-md-0 text-small"
           >
-            <li
-              class="nav-item"
-            >
-              <span
-                class="nav-link"
+            <li>
+              <a
+                class="nav-link text-white"
+                href="#/"
+                title="Home"
               >
-                Home
-              </span>
+                Paging
+              </a>
             </li>
-            <li
-              class="nav-item"
-            >
-              <span
-                aria-current="true"
-                class="nav-link active"
+            <li>
+              <a
+                class="nav-link text-secondary text-white"
+                href="#/buttons"
+                title="Home"
               >
-                Docs
-              </span>
+                Buttons
+              </a>
             </li>
-            <li
-              class="nav-item"
-            >
-              <span
-                class="nav-link"
+            <li>
+              <button
+                class="nav-link text-secondary text-white"
+                title="Light"
+                type="button"
               >
-                Examples
-              </span>
+                <svg
+                  class="bi bi-moon"
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 16 16"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"
+                  />
+                </svg>
+              </button>
             </li>
-            <li
-              class="nav-item"
-            >
-              <span
-                class="nav-link"
+            <li>
+              <button
+                class="nav-link text-secondary text-white"
+                title="Logout"
+                type="button"
               >
-                Guidelines
-              </span>
+                <svg
+                  class="bi bi-box-arrow-right"
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 16 16"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                    fill-rule="evenodd"
+                  />
+                  <path
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark mb-5"
-  >
-    <div
-      class="container-fluid"
-    >
-      <button
-        class="navbar-toggler"
-        type="button"
-      >
-        <span
-          class="navbar-toggler-icon"
-        />
-      </button>
-      <div
-        class="collapse navbar-collapse"
-      >
-        <ul
-          class="navbar-nav"
-        >
-          <li
-            class="nav-item"
-          >
-            <a
-              class="nav-link"
-              href="#/"
-            >
-              Paging
-            </a>
-          </li>
-          <li
-            class="nav-item"
-          >
-            <a
-              class="nav-link"
-              href="#/buttons"
-            >
-              Buttons
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
+  </header>
   <div
     class="container"
   >
