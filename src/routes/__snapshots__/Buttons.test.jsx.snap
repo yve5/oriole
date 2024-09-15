@@ -19,7 +19,7 @@ exports[`Buttons > should match expected snapshot 1`] = `
           Primary
         </button>
         <button
-          class="btn btn-outline-secondary me-2 mb-2 btn-sm"
+          class="btn btn-secondary me-2 mb-2 btn-sm"
           data-testid="button-demo"
           type="button"
         >
@@ -67,7 +67,7 @@ exports[`Buttons > should match expected snapshot 1`] = `
         <code>
           &lt;button className="btn btn-primary btn-sm" type="button"&gt;Primary&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-outline-secondary btn-sm" type="button"&gt;Secondary&lt;/button&gt;
+          &lt;button className="btn btn-secondary btn-sm" type="button"&gt;Secondary&lt;/button&gt;
           <br />
           &lt;button className="btn btn-success btn-sm" type="button"&gt;Success&lt;/button&gt;
           <br />
@@ -100,7 +100,7 @@ exports[`Buttons > should match expected snapshot 1`] = `
           Primary
         </button>
         <button
-          class="btn btn-outline-secondary me-2 mb-2 btn-sm disabled"
+          class="btn btn-secondary me-2 mb-2 btn-sm disabled"
           data-testid="button-demo"
           type="button"
         >
@@ -148,7 +148,7 @@ exports[`Buttons > should match expected snapshot 1`] = `
         <code>
           &lt;button className="btn btn-primary btn-sm disabled" type="button"&gt;Primary&lt;/button&gt;
           <br />
-          &lt;button className="btn btn-outline-secondary btn-sm disabled" type="button"&gt;Secondary&lt;/button&gt;
+          &lt;button className="btn btn-secondary btn-sm disabled" type="button"&gt;Secondary&lt;/button&gt;
           <br />
           &lt;button className="btn btn-success btn-sm disabled" type="button"&gt;Success&lt;/button&gt;
           <br />
