@@ -10,7 +10,8 @@
     "lint": "eslint ./src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest --coverage",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "5.3.3",
@@ -18,18 +19,19 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.26.2",
-    "vite": "5.4.3",
+    "vite": "5.4.6",
     "vite-plugin-eslint": "1.8.1",
-    "vitest": "2.0.5"
+    "vitest": "2.1.1"
   },
   "devDependencies": {
     "@testing-library/react": "16.0.1",
-    "@types/react": "18.3.5",
+    "@types/react": "18.3.7",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "4.3.1",
-    "@vitest/coverage-v8": "2.0.5",
+    "@vitest/coverage-v8": "2.1.1",
     "eslint": "8.57.0",
     "eslint-config-airbnb": "19.0.4",
+    "gh-pages": "6.1.1",
     "jsdom": "25.0.0",
     "sass": "1.69.5"
   }
