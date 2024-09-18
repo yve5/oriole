@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../assets/logo.webp';
-import ThemeButton from './ThemeButton';
+import Logo from '../resources/logo.webp';
+import ThemeButton from '../../themeButton';
 
-import { BoxArrowRight } from './icons';
+import { BoxArrowRight } from '../../icons';
 
 const Header = () => (
   <header>
