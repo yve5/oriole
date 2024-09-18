@@ -20,3 +20,12 @@ $link-hover-color: $primary;
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 // Then add additional custom code here
+
+.app-logo {
+  @include media-breakpoint-down(md) {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    object-position: left;
+  }
+}
