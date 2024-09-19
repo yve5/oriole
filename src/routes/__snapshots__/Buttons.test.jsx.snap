@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Buttons > should match expected snapshot 1`] = `
+exports[`Buttons > render the component 1`] = `
 <DocumentFragment>
   <div
     class="card mb-4"

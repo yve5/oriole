@@ -12,9 +12,7 @@ const ButtonLayer = ({ className = '' }) => (
             key={suffix}
             type="button"
             data-testid="button-demo"
-            className={`btn btn-${suffix} me-2 mb-2${
-              className ? ` ${className}` : ''
-            }`}
+            className={`btn btn-${suffix} me-2 mb-2 ${className}`}
             onClick={() =>
               Confetti({ spread: 70, origin: { y: 0.6 }, particleCount: 100 })
             }
@@ -23,13 +21,11 @@ const ButtonLayer = ({ className = '' }) => (
           </button>
         ))}
       </li>
-
       <li className="list-group-item bg-light-subtle">
         <code>
           {ORIOLE_BUTTONS.map(({ title, suffix }) => (
             <Fragment key={suffix}>
-              &lt;button className=&quot;btn btn-{suffix}
-              {className ? ` ${className}` : ''}&quot;
+              &lt;button className=&quot;btn btn-{suffix} {className}&quot;
               type=&quot;button&quot;&gt;
               {title}&lt;/button&gt;
               <br />

@@ -4,7 +4,7 @@ import { act, fireEvent, render } from '@testing-library/react';
 import Buttons from './Buttons';
 
 describe('Buttons', () => {
-  it('should match expected snapshot', async () => {
+  it('render the component', async () => {
     const { asFragment, getAllByText, rerender } = render(<Buttons />);
 
     rerender(<Buttons />);
