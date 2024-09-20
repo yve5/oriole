@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Confetti from 'canvas-confetti';
 
-import { ORIOLE_BUTTONS } from '../constants';
+import { ORIOLE_BUTTONS } from '../resources/constants';
 
 const ButtonLayer = ({ className = '' }) => (
   <div className="card mb-4">
