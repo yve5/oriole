@@ -5,8 +5,6 @@ import Paging from './routes/paging';
 import Buttons from './routes/buttons';
 import Layout from './features/layout';
 
-import Hello from './Hello';
-
 import './styles.scss';
 
 const App = () => (
@@ -17,8 +15,6 @@ const App = () => (
         <Route path="buttons" element={<Buttons />} />
       </Route>
     </Routes>
-
-    <Hello />
   </HashRouter>
 );
 

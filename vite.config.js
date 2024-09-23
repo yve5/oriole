@@ -15,8 +15,8 @@ export default defineConfig({
       ...configDefaults.coverage,
       exclude: [
         ...configDefaults.coverage.exclude,
-        'src/library.jsx',
         'src/main.jsx',
+        'src/lib.jsx',
         'lib/**',
       ],
     },

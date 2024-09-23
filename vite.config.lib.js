@@ -1,13 +1,12 @@
-import react from '@vitejs/plugin-react';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [peerDepsExternal()],
   build: {
     outDir: 'lib',
     lib: {
-      name: 'Oriole',
-      entry: 'src/library.jsx',
+      entry: 'src/lib.jsx',
       formats: ['esm', 'cjs'],
       fileName: (format) => `index.${format}.js`,
     },
