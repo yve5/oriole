@@ -37,36 +37,9 @@ $link-hover-color: $primary;
     body {
       height: 100vh;
 
-      //     &.logged {
-      //       height: 100%;
-
-      //       #root {
-      //         height: 100%;
-
-      //         .App {
-      //           height: 100%;
-
-      //           &__content {
-      //             height: calc(100% - #{$headerHeight});
-      //             overflow: auto;
-
-      //             > .container-fluid,
-      //             > .container {
-      //               min-height: calc(100% - #{$headerHeight + $footerBuffer});
-      //             }
-
-      //             @media print {
-      //               height: initial;
-      //               overflow: initial;
-      //             }
-
-      //             > .o-footer {
-      //               margin-top: 2.3rem;
-      //             }
-      //           }
-      //         }
-      //       }
-      //     }
+      #root {
+        height: 100vh;
+      }
     }
   }
 }
