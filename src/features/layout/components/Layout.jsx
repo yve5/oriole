@@ -1,16 +1,19 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-// import Sidebar from './Sidebar';
+import Sidebar from './Sidebar';
 import Header from '../../header';
 
 const Layout = () => (
   <>
     <Header />
-    {/* <Sidebar /> */}
 
-    <div className="container">
-      <Outlet />
+    <div className="d-flex">
+      <Sidebar />
+
+      <div className="container mt-4">
+        <Outlet />
+      </div>
     </div>
   </>
 );

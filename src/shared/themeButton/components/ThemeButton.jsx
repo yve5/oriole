@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Sun, Moon, CircleHalf } from '../../icons';
+import { Sun, Moon, CircleHalf } from '../../../features/icons';
 import {
   B7P_MODES,
   B7P_MODE_SCHEME,

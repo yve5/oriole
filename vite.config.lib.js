@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: 'lib',
     lib: {
-      entry: 'src/lib.jsx',
+      entry: 'src/lib/index.jsx',
       formats: ['esm', 'cjs'],
       fileName: (format) => `index.${format}.js`,
     },

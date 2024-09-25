@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../resources/logo.webp';
-import ThemeButton from '../../themeButton';
+import ThemeButton from '../../../shared/themeButton';
 
 import { BoxArrowRight } from '../../icons';
 
 const Header = () => (
   <header>
-    <div className="px-3 py-2 mb-4 text-bg-dark border-bottom">
+    <div className="px-3 py-2 text-bg-dark border-bottom">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start">
           <Link
@@ -20,18 +20,12 @@ const Header = () => (
 
           <ul className="nav col-12 col-sm-auto my-2 justify-content-center my-sm-0 text-small">
             <li>
-              <Link to="/" title="Home" className="nav-link text-white">
-                Paging
-              </Link>
-            </li>
-            <li>
-              <Link
-                title="Home"
-                to="/buttons"
+              <button
+                type="button"
                 className="nav-link text-secondary text-white"
               >
-                Buttons
-              </Link>
+                en
+              </button>
             </li>
             <li>
               <ThemeButton />

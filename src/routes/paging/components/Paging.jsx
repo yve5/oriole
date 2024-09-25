@@ -35,14 +35,24 @@ const Paging = () => (
         </table>
 
         <nav>
-          <ul className="pagination">
-            {['Previous', '1', '2', '3', 'Next'].map((item) => (
+          <ul className="pagination justify-content-center">
+            <li className="page-item">
+              <button className="page-link" type="button">
+                <span aria-hidden="true">&laquo;</span>
+              </button>
+            </li>
+            {['1', '2', '3'].map((item) => (
               <li className="page-item" key={item}>
                 <button className="page-link" type="button">
                   {item}
                 </button>
               </li>
             ))}
+            <li className="page-item">
+              <button className="page-link" type="button">
+                <span aria-hidden="true">&raquo;</span>
+              </button>
+            </li>
           </ul>
         </nav>
       </li>
