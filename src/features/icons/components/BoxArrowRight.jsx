@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BoxArrowRight = () => (
+const BoxArrowRight = ({ width = '20', height = '20' }) => (
   <svg
-    width="20"
-    height="20"
+    width={width}
+    height={height}
     fill="currentColor"
     viewBox="0 0 16 16"
     className="bi bi-box-arrow-right"

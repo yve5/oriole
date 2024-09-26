@@ -41,7 +41,7 @@ const Paging = () => (
                 <span aria-hidden="true">&laquo;</span>
               </button>
             </li>
-            {['1', '2', '3'].map((item) => (
+            {[1, 2, 3].map((item) => (
               <li className="page-item" key={item}>
                 <button className="page-link" type="button">
                   {item}

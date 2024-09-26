@@ -90,7 +90,7 @@ exports[`Paging > should match expected snapshot 1`] = `
         </table>
         <nav>
           <ul
-            class="pagination"
+            class="pagination justify-content-center"
           >
             <li
               class="page-item"
@@ -99,7 +99,11 @@ exports[`Paging > should match expected snapshot 1`] = `
                 class="page-link"
                 type="button"
               >
-                Previous
+                <span
+                  aria-hidden="true"
+                >
+                  «
+                </span>
               </button>
             </li>
             <li
@@ -139,7 +143,11 @@ exports[`Paging > should match expected snapshot 1`] = `
                 class="page-link"
                 type="button"
               >
-                Next
+                <span
+                  aria-hidden="true"
+                >
+                  »
+                </span>
               </button>
             </li>
           </ul>

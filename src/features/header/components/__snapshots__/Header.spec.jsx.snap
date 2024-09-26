@@ -4,7 +4,7 @@ exports[`Header > renders the component. default 1`] = `
 <DocumentFragment>
   <header>
     <div
-      class="px-3 py-2 mb-4 text-bg-dark border-bottom"
+      class="px-3 py-2 text-bg-dark border-bottom"
     >
       <div
         class="container"
@@ -27,22 +27,12 @@ exports[`Header > renders the component. default 1`] = `
             class="nav col-12 col-sm-auto my-2 justify-content-center my-sm-0 text-small"
           >
             <li>
-              <a
-                class="nav-link text-white"
-                href="/"
-                title="Home"
-              >
-                Paging
-              </a>
-            </li>
-            <li>
-              <a
+              <button
                 class="nav-link text-secondary text-white"
-                href="/buttons"
-                title="Home"
+                type="button"
               >
-                Buttons
-              </a>
+                en
+              </button>
             </li>
             <li>
               <button

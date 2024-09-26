@@ -1,42 +1,52 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import Logo from '../../header/resources/logo.webp';
 import { BoxArrowRight } from '../../icons';
+
+const links = [
+  { route: '/', title: 'Paging', active: true },
+  { route: '/buttons', title: 'Buttons' },
+  { route: '/buttons', title: 'Something really long' },
+];
 
 const Sidebar = () => {
   const [expanded, setExpanded] = useState(false);
+  const size = expanded ? 20 : 24;
 
   return (
-    <div
-      // style={{ width: expanded ? '200px' : '100px' }}
-      className="d-flex flex-column border-end"
-    >
-      <ul className="flex-grow-1 nav nav-pills flex-column mb-auto p-3">
-        <li className="nav-item">
-          <Link to="/" className="nav-link active">
-            <BoxArrowRight />
-            {expanded ? 'Paging' : ''}
-          </Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/buttons" className="nav-link">
-            <BoxArrowRight />
-            {expanded ? 'Buttons' : ''}
-          </Link>
-        </li>
+    <div className="d-flex flex-column border-end d-none d-lg-block">
+      <ul
+        className={`flex-grow-1 nav nav-pills flex-column mb-auto ${
+          expanded ? 'p-2' : 'text-center'
+        }`}
+      >
+        {links.map(({ active, route, title }) => (
+          <li className="nav-item" key={title}>
+            <Link
+              to={route}
+              className={`nav-link${
+                expanded ? '' : ' py-3 border-bottom rounded-0'
+              }${active ? ' active' : ''}`}
+            >
+              <BoxArrowRight width={size} height={size} />
+              {expanded && title}
+            </Link>
+          </li>
+        ))}
       </ul>
 
-      <ul className="nav nav-pills flex-column mb-auto p-3">
+      <ul
+        className={`nav nav-pills flex-column mb-auto ${
+          expanded ? 'p-3' : 'text-center'
+        }`}
+      >
         <li className="nav-item">
           <button
             type="button"
-            className="nav-link"
             onClick={() => setExpanded(!expanded)}
+            className={`nav-link${expanded ? '' : ' py-3 rounded-0'}`}
           >
-            <BoxArrowRight />
-            {expanded ? 'Expand' : ''}
+            <BoxArrowRight width={size} height={size} />
+            {expanded && 'Collapse'}
           </button>
         </li>
       </ul>
