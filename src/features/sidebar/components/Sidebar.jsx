@@ -13,7 +13,7 @@ const Sidebar = () => {
   const size = expanded ? 20 : 24;
 
   return (
-    <div className="d-flex flex-column border-end d-none d-lg-block">
+    <div className="d-none d-lg-flex flex-column border-end">
       <ul
         className={`flex-grow-1 nav nav-pills flex-column mb-auto ${
           expanded ? 'p-2' : 'text-center'
