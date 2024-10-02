@@ -2,12 +2,12 @@ import React from 'react';
 import { vi } from 'vitest';
 import { render } from '@testing-library/react';
 
-import { ThemeButton } from './index';
+import { Theme } from './index';
 
 describe('Library', () => {
-  it('renders ThemeButton', () => {
-    const { asFragment, rerender } = render(<ThemeButton />);
-    rerender(<ThemeButton />);
+  it('renders Theme', () => {
+    const { asFragment, rerender } = render(<Theme />);
+    rerender(<Theme />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`I18n > should translate a placeholder 1`] = `
+<DocumentFragment>
+  <input
+    placeholder="Bonjour le monde"
+    type="text"
+    value=""
+  />
+</DocumentFragment>
+`;
+
+exports[`I18n > should translate an option 1`] = `
+<DocumentFragment>
+  <option
+    value="42"
+  >
+    Bonjour le monde
+  </option>
+</DocumentFragment>
+`;
+
+exports[`I18n > should translate an option with args 1`] = `
+<DocumentFragment>
+  <option
+    value="42"
+  >
+    Bonjour le monde
+  </option>
+</DocumentFragment>
+`;
+
+exports[`I18n > should translate attributes 1`] = `
+<DocumentFragment>
+  <img
+    alt="Bonjour le monde"
+    src="picture"
+    title="Bonjour le monde"
+  />
+</DocumentFragment>
+`;
+
+exports[`I18n > should translate attributes with shortcuts 1`] = `
+<DocumentFragment>
+  <img
+    alt="Lorem ipsum..."
+    src="picture"
+    title="Bonjour le monde"
+  />
+</DocumentFragment>
+`;
+
+exports[`I18n date parser > should format a date with an input tag 1`] = `
+<DocumentFragment>
+  <input
+    class="form-control form-control-sm"
+    disabled=""
+    type="text"
+    value="14/05/2017"
+  />
+</DocumentFragment>
+`;
+
+exports[`I18n date parser > should format a date with attributes & arguments 1`] = `
+<DocumentFragment>
+  <img
+    alt="Bonjour le monde"
+    src="picture"
+    title="Mise à jour le 14/03/2020, créé le 14/05/2017 par John Doe"
+  />
+</DocumentFragment>
+`;

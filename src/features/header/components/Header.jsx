@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../resources/logo.webp';
-import ThemeButton from '../../../shared/themeButton';
+import Theme from '../../../shared/theme';
 
 import { BoxArrowRight } from '../../icons';
 
@@ -27,7 +27,7 @@ const Header = () => (
             </button>
           </li>
           <li>
-            <ThemeButton />
+            <Theme />
           </li>
           <li>
             <button

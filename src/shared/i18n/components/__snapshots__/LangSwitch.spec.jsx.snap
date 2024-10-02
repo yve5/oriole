@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LangSwitch should match expected snapshot. default 1`] = `
+<button
+  data-testid="i18n-switch-button"
+  onClick={[Function]}
+  type="button"
+>
+  Français
+</button>
+`;
+
+exports[`LangSwitch should match expected snapshot. switch lang & fr 1`] = `
+<button
+  data-testid="i18n-switch-button"
+  onClick={[Function]}
+  type="button"
+>
+  Français
+</button>
+`;
+
+exports[`LangSwitch should match expected snapshot. switch lang 1`] = `
+<button
+  data-testid="i18n-switch-button"
+  onClick={[Function]}
+  type="button"
+>
+  Français
+</button>
+`;

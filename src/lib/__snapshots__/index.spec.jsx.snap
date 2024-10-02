@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Library > renders ThemeButton 1`] = `
+exports[`Library > renders Theme 1`] = `
 <DocumentFragment>
   <button
     class="nav-link text-secondary text-white"

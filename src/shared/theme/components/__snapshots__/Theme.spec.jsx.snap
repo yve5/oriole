@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ThemeButton > renders the component. dark 1`] = `
+exports[`Theme > renders the component. dark 1`] = `
 <DocumentFragment>
   <button
     class="nav-link text-secondary text-white"
@@ -24,7 +24,7 @@ exports[`ThemeButton > renders the component. dark 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ThemeButton > renders the component. default 1`] = `
+exports[`Theme > renders the component. default 1`] = `
 <DocumentFragment>
   <button
     class="nav-link text-secondary text-white"

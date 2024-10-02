@@ -7,7 +7,7 @@ import {
   B7P_MODE_SESSION,
 } from '../resources/constants';
 
-const ThemeButton = () => {
+const Theme = () => {
   const [theme, setTheme] = useState(0);
   const [autoTheme, setAutoTheme] = useState(0);
 
@@ -60,4 +60,4 @@ const ThemeButton = () => {
   );
 };
 
-export default ThemeButton;
+export default Theme;
