@@ -1,5 +1,5 @@
 import { vi } from 'vitest';
-import { tsl } from '.';
+import { tsl } from './Translate';
 import fr from '../dictionaries/fr';
 
 describe('Translate', () => {

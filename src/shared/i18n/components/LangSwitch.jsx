@@ -5,14 +5,17 @@ import I18n from './I18n';
 import * as All from '../actions/All';
 
 const LangSwitch = ({ className, switchLang }) => (
-  <button
-    type="button"
-    className={className}
-    onClick={() => switchLang()}
-    data-testid="i18n-switch-button"
-  >
-    <I18n>LANGUAGE</I18n>
-  </button>
+  <I18n title>
+    <button
+      type="button"
+      title="LANGUAGE"
+      className={className}
+      onClick={() => switchLang()}
+      data-testid="i18n-switch-button"
+    >
+      <I18n>LANG</I18n>
+    </button>
+  </I18n>
 );
 
 const mapStateToProps = (state) => ({

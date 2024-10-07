@@ -5,6 +5,7 @@ import Logo from '../resources/logo.webp';
 import Theme from '../../../shared/theme';
 
 import { BoxArrowRight } from '../../icons';
+import { LangSwitch } from '../../../shared/i18n';
 
 const Header = () => (
   <header>
@@ -17,14 +18,9 @@ const Header = () => (
           <img src={Logo} alt="Oriale" title="Oriale" className="app-logo" />
         </Link>
 
-        <ul className="nav col-12qwe col-sm-autoqwe col-sm-auto my-2 justify-content-center my-sm-0 text-small">
+        <ul className="nav col-sm-auto my-2 justify-content-center my-sm-0 text-small">
           <li>
-            <button
-              type="button"
-              className="nav-link text-secondary text-white"
-            >
-              en
-            </button>
+            <LangSwitch className="nav-link text-secondary text-white" />
           </li>
           <li>
             <Theme />

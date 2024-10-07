@@ -1,12 +1,12 @@
 import { checkTermOrder, convertCollectionToArray } from './Term';
+import { getInitialState } from './InitialState';
 import { checkMissingTerms } from './Missing';
 import { formatDate } from './Format';
-import { tsl } from './Translate';
 
 export {
-  tsl,
   formatDate,
   checkTermOrder,
+  getInitialState,
   checkMissingTerms,
   convertCollectionToArray,
 };

@@ -21,14 +21,16 @@ exports[`Header > renders the component. default 1`] = `
           />
         </a>
         <ul
-          class="nav col-12qwe col-sm-autoqwe col-sm-auto my-2 justify-content-center my-sm-0 text-small"
+          class="nav col-sm-auto my-2 justify-content-center my-sm-0 text-small"
         >
           <li>
             <button
               class="nav-link text-secondary text-white"
+              data-testid="i18n-switch-button"
+              title="Français"
               type="button"
             >
-              en
+              fr
             </button>
           </li>
           <li>

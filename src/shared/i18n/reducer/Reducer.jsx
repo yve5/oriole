@@ -1,7 +1,7 @@
 import en from '../dictionaries/en';
 import fr from '../dictionaries/fr';
 
-import { tsl } from '../utils';
+import { tsl } from '../utils/Translate';
 import {
   I18N_INIT_LANG,
   I18N_CHANGE_LANG,

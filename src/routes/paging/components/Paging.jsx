@@ -1,7 +1,12 @@
 import React from 'react';
+import { I18n } from '../../../shared/i18n';
 
 const Paging = () => (
   <div className="card">
+    <h1>
+      <I18n>Hello World</I18n>
+    </h1>
+
     <ul className="list-group list-group-flush">
       <li className="list-group-item">
         <table className="table">

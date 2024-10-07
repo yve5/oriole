@@ -22,7 +22,7 @@ const I18N_DICTIONARY = {
   'Loading...': 'Loading...',
   Members: 'Members',
   Next: 'Next',
-  No: 'No',
+  No: 'Non',
   'No record': 'No record',
   'One record': 'One record',
   Previous: 'Previous',
@@ -32,7 +32,7 @@ const I18N_DICTIONARY = {
   'to fill': 'to fill',
   'Update of $update, created at $start by $guest':
     'Update of $update, created at $start by $guest',
-  Yes: 'Yes',
+  Yes: 'Oui',
 };
 
 export default I18N_DICTIONARY;

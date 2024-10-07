@@ -14,7 +14,7 @@ describe('I18n reducer', () => {
   };
 
   it('should handle tsl', () => {
-    expect(initialState.tsl('Yes')).toEqual('Oui');
+    expect(initialState.tsl('Yes')).toBe('Yes');
   });
 
   it('should handle initial state. undefined', () => {
@@ -59,7 +59,7 @@ describe('I18n reducer', () => {
       type: 'I18N_SWITCH_LANG',
     });
 
-    expect(innerState.tsl('Yes')).toEqual('Oui');
+    expect(innerState.tsl('Yes')).toBe('Yes');
   });
 
   it('should handle I18N_SWITCH_LANG. french', () => {
