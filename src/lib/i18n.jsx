@@ -1,4 +1,3 @@
-import reducer, { I18n, getInitialState } from '../shared/i18n';
+import { I18n, LangSwitch, i18nReducer } from '../shared/i18n';
 
-export { I18n, getInitialState };
-export default reducer;
+export { I18n, LangSwitch, i18nReducer };

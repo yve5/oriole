@@ -4,15 +4,15 @@ import { formatDate } from '../utils';
 
 const I18n = ({
   args,
-  attrs,
-  children,
   date,
+  attrs,
+  title,
   format,
+  children,
   placeholder,
   root: {
     i18n: { lang, tsl },
   },
-  title,
 }) => {
   let result = '-';
 

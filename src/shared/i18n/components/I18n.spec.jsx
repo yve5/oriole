@@ -7,13 +7,13 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 
 import I18n from './I18n';
+import reducer from '../reducer';
 import en from '../dictionaries/en';
 import fr from '../dictionaries/fr';
 
-import { getInitialState } from '../utils';
-
 const mockStore = configureMockStore([thunk]);
-const defaultStore = mockStore({ i18n: getInitialState([fr, en]) });
+
+const defaultStore = mockStore({ i18n: reducer([fr, en])() });
 
 describe('I18n', () => {
   beforeEach(() => {

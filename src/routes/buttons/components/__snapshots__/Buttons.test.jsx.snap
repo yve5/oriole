@@ -13,49 +13,42 @@ exports[`Buttons > render the component 1`] = `
       >
         <button
           class="btn btn-primary me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Primary
         </button>
         <button
           class="btn btn-secondary me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Secondary
         </button>
         <button
           class="btn btn-success me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Success
         </button>
         <button
           class="btn btn-danger me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Danger
         </button>
         <button
           class="btn btn-warning me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Warning
         </button>
         <button
           class="btn btn-info me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Info
         </button>
         <button
           class="btn btn-link me-2 mb-2 btn-sm"
-          data-testid="button-demo"
           type="button"
         >
           Link
@@ -94,49 +87,42 @@ exports[`Buttons > render the component 1`] = `
       >
         <button
           class="btn btn-primary me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Primary
         </button>
         <button
           class="btn btn-secondary me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Secondary
         </button>
         <button
           class="btn btn-success me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Success
         </button>
         <button
           class="btn btn-danger me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Danger
         </button>
         <button
           class="btn btn-warning me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Warning
         </button>
         <button
           class="btn btn-info me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Info
         </button>
         <button
           class="btn btn-link me-2 mb-2 btn-sm disabled"
-          data-testid="button-demo"
           type="button"
         >
           Link

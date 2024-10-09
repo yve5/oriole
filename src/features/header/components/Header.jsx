@@ -1,4 +1,5 @@
 import React from 'react';
+import { clsx } from 'clsx';
 import { Link } from 'react-router-dom';
 
 import Logo from '../resources/logo.webp';
@@ -9,18 +10,48 @@ import { LangSwitch } from '../../../shared/i18n';
 
 const Header = () => (
   <header>
-    <div className="px-3 py-2 text-bg-dark border-bottom">
-      <div className="d-flex align-items-center justify-content-between">
+    <div className={clsx('px-3', 'py-2', 'text-bg-dark', 'border-bottom')}>
+      <div
+        className={clsx(
+          'd-flex',
+          'align-items-center',
+          'justify-content-between'
+        )}
+      >
         <Link
           to="/"
-          className="d-flex align-items-center my-2 my-sm-0 me-sm-auto text-white text-decoration-none"
+          className={clsx(
+            'd-flex',
+            'align-items-center',
+            'my-2',
+            'my-sm-0',
+            'me-sm-auto',
+            'text-white',
+            'text-decoration-none'
+          )}
         >
-          <img src={Logo} alt="Oriale" title="Oriale" className="app-logo" />
+          <img
+            src={Logo}
+            alt="Oriale"
+            title="Oriale"
+            className={clsx('app-logo')}
+          />
         </Link>
 
-        <ul className="nav col-sm-auto my-2 justify-content-center my-sm-0 text-small">
+        <ul
+          className={clsx(
+            'nav',
+            'col-sm-auto',
+            'justify-content-center',
+            'text-small',
+            'my-2',
+            'my-sm-0'
+          )}
+        >
           <li>
-            <LangSwitch className="nav-link text-secondary text-white" />
+            <LangSwitch
+              className={clsx('nav-link', 'text-secondary', 'text-white')}
+            />
           </li>
           <li>
             <Theme />
@@ -29,7 +60,7 @@ const Header = () => (
             <button
               type="button"
               title="Logout"
-              className="nav-link text-secondary text-white"
+              className={clsx('nav-link', 'text-secondary', 'text-white')}
             >
               <BoxArrowRight />
             </button>

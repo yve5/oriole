@@ -1,10 +1,9 @@
 import { vi } from 'vitest';
 
-import reducer, { initialState } from './Reducer';
-import { initLang, switchLang } from '../actions/All';
-
+import reducer from './Reducer';
 import en from '../dictionaries/en';
 import fr from '../dictionaries/fr';
+import { changeLang, switchLang } from '../actions/All';
 
 describe('I18n reducer', () => {
   const localState = {
@@ -13,35 +12,37 @@ describe('I18n reducer', () => {
     lang: 'en',
   };
 
-  it('should handle tsl', () => {
-    expect(initialState.tsl('Yes')).toBe('Yes');
-  });
-
   it('should handle initial state. undefined', () => {
     const innerState = reducer(undefined)();
+
     expect(innerState).toEqual(localState);
+    expect(innerState.tsl('Yes')).toBe('Yes');
   });
 
   it('should handle initial state. initialized', () => {
-    const innerState = reducer(fr, en)();
+    const innerState = reducer([fr, en])();
 
     expect(innerState).toEqual({
       ...localState,
-      lang: 'fr',
+      lang: 'en',
     });
 
     expect(innerState.tsl('Yes')).toEqual('Oui');
   });
 
-  it('should handle I18N_INIT_LANG', () => {
+  it('should handle I18N_CHANGE_LANG', () => {
     const innerState = reducer()(
-      { dictionaries: [en, fr], lang: 'en', tsl: expect.any(Function) },
-      initLang('fr')
+      {
+        lang: 'en',
+        dictionaries: [en, fr],
+        tsl: expect.any(Function),
+      },
+      changeLang('fr')
     );
 
     expect(innerState).toEqual({
       ...localState,
-      type: 'I18N_INIT_LANG',
+      type: 'I18N_CHANGE_LANG',
       lang: 'fr',
     });
 
@@ -50,7 +51,11 @@ describe('I18n reducer', () => {
 
   it('should handle I18N_SWITCH_LANG. default', () => {
     const innerState = reducer()(
-      { dictionaries: [en, fr], lang: 'fr', tsl: vi.fn() },
+      {
+        lang: 'fr',
+        tsl: vi.fn(),
+        dictionaries: [en, fr],
+      },
       switchLang()
     );
 
@@ -64,7 +69,11 @@ describe('I18n reducer', () => {
 
   it('should handle I18N_SWITCH_LANG. french', () => {
     const innerState = reducer()(
-      { dictionaries: [en, fr], lang: 'en', tsl: expect.any(Function) },
+      {
+        lang: 'en',
+        dictionaries: [en, fr],
+        tsl: expect.any(Function),
+      },
       switchLang()
     );
 

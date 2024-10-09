@@ -3,37 +3,47 @@ import fr from '../dictionaries/fr';
 
 import { tsl } from '../utils/Translate';
 import {
-  I18N_INIT_LANG,
   I18N_CHANGE_LANG,
   I18N_SWITCH_LANG,
   I18N_LOCAL_USER_LANG,
 } from '../resources/constants';
 
-export const initialState = {
+const initialState = {
   tsl: (term, args) => tsl(en, term, args),
   dictionaries: [en, fr],
   lang: en.LANG,
 };
 
-const reducer = (...dictionaries) => {
+const reducer = (dictionaries, localStorageName = I18N_LOCAL_USER_LANG) => {
+  const getIndex = (dicos, lang) =>
+    dicos.findIndex(({ LANG }) => LANG === lang);
+
+  const localLang = localStorage.getItem(localStorageName);
   let innerState = { ...initialState };
 
-  if (dictionaries && dictionaries[0]) {
+  if (Array.isArray(dictionaries) && dictionaries[0]) {
     innerState = {
       ...innerState,
       dictionaries,
-      lang: dictionaries[0].LANG,
       tsl: (term, args) => tsl(dictionaries[0], term, args),
+    };
+  }
+
+  if (localLang) {
+    const innerDicos = innerState.dictionaries;
+    const initialIndex = getIndex(innerDicos, localLang);
+
+    innerState = {
+      ...innerState,
+      lang: localLang,
+      tsl: (term, args) => tsl(innerDicos[initialIndex], term, args),
     };
   }
 
   return (state = innerState, action = {}) => {
     switch (action.type) {
-      case I18N_INIT_LANG:
       case I18N_CHANGE_LANG: {
-        const currentIndex = state.dictionaries.findIndex(
-          ({ LANG }) => LANG === action.lang
-        );
+        const currentIndex = getIndex(state.dictionaries, action.lang);
 
         return {
           ...state,
@@ -44,14 +54,13 @@ const reducer = (...dictionaries) => {
       }
 
       case I18N_SWITCH_LANG: {
-        const currentIndex = state.dictionaries.findIndex(
-          ({ LANG }) => LANG === state.lang
-        );
+        const currentIndex = getIndex(state.dictionaries, state.lang);
+
         const nextIndex = (currentIndex + 1) % state.dictionaries.length;
         const nextDico = state.dictionaries[nextIndex];
         const nextLang = nextDico.LANG;
 
-        localStorage.setItem(I18N_LOCAL_USER_LANG, nextLang);
+        localStorage.setItem(localStorageName, nextLang);
 
         return {
           ...state,

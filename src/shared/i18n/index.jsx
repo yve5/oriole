@@ -1,8 +1,5 @@
-import reducer from './reducer';
-import I18n from './components/I18n';
 import LangSwitch from './components/LangSwitch';
+import I18n from './components/I18n';
+import i18nReducer from './reducer';
 
-import { getInitialState } from './utils';
-
-export { I18n, LangSwitch, getInitialState };
-export default reducer;
+export { I18n, LangSwitch, i18nReducer };

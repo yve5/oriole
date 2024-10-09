@@ -11,7 +11,6 @@ const LangSwitch = ({ className, switchLang }) => (
       title="LANGUAGE"
       className={className}
       onClick={() => switchLang()}
-      data-testid="i18n-switch-button"
     >
       <I18n>LANG</I18n>
     </button>
