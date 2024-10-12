@@ -6,17 +6,17 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
-import Header from './Header';
+import Footer from './Footer';
 import i18n from '../../../i18n';
 
 const mockStore = configureMockStore([thunk]);
 
-describe('Header', () => {
+describe('Footer', () => {
   it('renders the component. default', () => {
     const { asFragment } = render(
       <Provider store={mockStore({ i18n })}>
         <MemoryRouter>
-          <Header />
+          <Footer />
         </MemoryRouter>
       </Provider>
     );

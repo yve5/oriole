@@ -12,7 +12,7 @@ const ButtonLayer = ({ className = '' }) => (
           <button
             key={suffix}
             type="button"
-            className={`btn btn-${suffix} me-2 mb-2 ${className}`}
+            className={clsx('btn', `btn-${suffix}`, 'me-2', 'mb-2', className)}
             onClick={() =>
               Confetti({ spread: 70, origin: { y: 0.6 }, particleCount: 100 })
             }
@@ -39,8 +39,8 @@ const ButtonLayer = ({ className = '' }) => (
 
 const Buttons = () => (
   <>
-    <ButtonLayer className="btn-sm" />
-    <ButtonLayer className="btn-sm disabled" />
+    <ButtonLayer className={clsx('btn-sm')} />
+    <ButtonLayer className={clsx('btn-sm', 'disabled')} />
   </>
 );
 

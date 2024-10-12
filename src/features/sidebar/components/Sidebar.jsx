@@ -1,52 +1,67 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BoxArrowRight } from '../../icons';
+import { clsx } from 'clsx';
 
-const links = [
-  { route: '/', title: 'Paging', active: true },
-  { route: '/buttons', title: 'Buttons' },
-  { route: '/buttons', title: 'Something really long' },
-];
+import { I18n } from '../../../shared/i18n';
+import { BoxArrowRight } from '../../icons';
+import { SIDEBAR_LINKS } from '../resources/constants';
 
 const Sidebar = () => {
   const [expanded, setExpanded] = useState(false);
   const size = expanded ? 20 : 24;
 
   return (
-    <div className="d-none d-lg-flex flex-column border-end">
+    <div className={clsx('d-none', 'd-lg-flex', 'flex-column', 'border-end')}>
       <ul
-        className={`flex-grow-1 nav nav-pills flex-column mb-auto ${
+        className={clsx(
+          'flex-grow-1',
+          'nav',
+          'nav-pills',
+          'flex-column',
+          'mb-auto',
           expanded ? 'p-2' : 'text-center'
-        }`}
+        )}
       >
-        {links.map(({ active, route, title }) => (
-          <li className="nav-item" key={title}>
+        {SIDEBAR_LINKS.map(({ active, route, title }) => (
+          <li key={title} className={clsx('nav-item')}>
             <Link
               to={route}
-              className={`nav-link${
-                expanded ? '' : ' py-3 border-bottom rounded-0'
-              }${active ? ' active' : ''}`}
+              className={clsx(
+                'nav-link',
+                !expanded && ['py-3', 'border-bottom', 'rounded-0'],
+                { active }
+              )}
             >
               <BoxArrowRight width={size} height={size} />
-              {expanded && title}
+              {expanded && <I18n>{title}</I18n>}
             </Link>
           </li>
         ))}
       </ul>
 
       <ul
-        className={`nav nav-pills flex-column mb-auto ${
+        className={clsx(
+          'nav',
+          'nav-pills',
+          'flex-column',
+          'mb-auto',
           expanded ? 'p-3' : 'text-center'
-        }`}
+        )}
       >
         <li className="nav-item">
           <button
             type="button"
             onClick={() => setExpanded(!expanded)}
-            className={`nav-link${expanded ? '' : ' py-3 rounded-0'}`}
+            className={clsx('nav-link', !expanded && ['py-3', 'rounded-0'])}
           >
             <BoxArrowRight width={size} height={size} />
-            {expanded && 'Collapse'}
+            {expanded ? (
+              <I18n>Collapse</I18n>
+            ) : (
+              <div className={clsx('d-none')}>
+                <I18n>Expand</I18n>
+              </div>
+            )}
           </button>
         </li>
       </ul>

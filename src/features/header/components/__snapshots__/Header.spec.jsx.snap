@@ -24,7 +24,13 @@ exports[`Header > renders the component. default 1`] = `
           class="nav col-sm-auto justify-content-center text-small my-2 my-sm-0"
         >
           <li>
-            -
+            <button
+              class="nav-link text-secondary text-white"
+              title="Français"
+              type="button"
+            >
+              fr
+            </button>
           </li>
           <li>
             <button

@@ -33,6 +33,13 @@ const I18N_DICTIONARY = {
   'Update of $update, created at $start by $guest':
     'Mise à jour le $update, créé le $start par $guest',
   Yes: 'Oui',
+  Changelog: 'Journal des modifications',
+  'About us': 'À propos de nous',
+  Collapse: 'Réduire',
+  Expand: 'Développer',
+  Paging: 'Pagination',
+  Buttons: 'Boutons',
+  'Something really long': 'Quelque chose réellement long',
 };
 
 export default I18N_DICTIONARY;

@@ -1,0 +1,252 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sidebar > renders the component 1`] = `
+<DocumentFragment>
+  <div
+    class="d-none d-lg-flex flex-column border-end"
+  >
+    <ul
+      class="flex-grow-1 nav nav-pills flex-column mb-auto text-center"
+    >
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link py-3 border-bottom rounded-0 active"
+          href="/"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 16 16"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link py-3 border-bottom rounded-0"
+          href="/buttons"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 16 16"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link py-3 border-bottom rounded-0"
+          href="/buttons"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 16 16"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="nav nav-pills flex-column mb-auto text-center"
+    >
+      <li
+        class="nav-item"
+      >
+        <button
+          class="nav-link py-3 rounded-0"
+          type="button"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 16 16"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="d-none"
+          >
+            Développer
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Sidebar > renders the component 2`] = `
+<DocumentFragment>
+  <div
+    class="d-none d-lg-flex flex-column border-end"
+  >
+    <ul
+      class="flex-grow-1 nav nav-pills flex-column mb-auto p-2"
+    >
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link active"
+          href="/"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 16 16"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Pagination
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="/buttons"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 16 16"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Boutons
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="/buttons"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 16 16"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Quelque chose réellement long
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="nav nav-pills flex-column mb-auto p-3"
+    >
+      <li
+        class="nav-item"
+      >
+        <button
+          class="nav-link"
+          type="button"
+        >
+          <svg
+            class="bi bi-box-arrow-right"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 16 16"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Réduire
+        </button>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

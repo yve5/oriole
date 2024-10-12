@@ -14,7 +14,7 @@ const defaultStore = { i18n: reducer()() };
 
 describe('LangSwitch', () => {
   it('should match expected snapshot. default', async () => {
-    const { getByText, rerender } = render(
+    const { getByText } = render(
       <Provider store={mockStore(defaultStore)}>
         <LangSwitch />
       </Provider>
