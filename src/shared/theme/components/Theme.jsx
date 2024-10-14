@@ -8,7 +8,7 @@ import {
 } from '../resources/constants';
 
 const Theme = () => {
-  const [theme, setTheme] = useState(0);
+  const [theme, setTheme] = useState(2);
   const [autoTheme, setAutoTheme] = useState(0);
 
   useEffect(() => {
@@ -22,10 +22,12 @@ const Theme = () => {
     applySystemTheme();
 
     const mediaQuery = window.matchMedia(B7P_MODE_SCHEME);
-    mediaQuery.addEventListener('change', applySystemTheme);
+    const mediaProps = ['change', applySystemTheme];
+
+    mediaQuery.addEventListener(...mediaProps);
 
     return () => {
-      mediaQuery.removeEventListener('change', applySystemTheme);
+      mediaQuery.removeEventListener(...mediaProps);
     };
   }, []);
 

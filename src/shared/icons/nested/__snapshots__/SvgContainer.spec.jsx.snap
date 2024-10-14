@@ -1,0 +1,229 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SvgContainer > should match expected snapshot. className 1`] = `
+<DocumentFragment>
+  <svg
+    class="svg-icon me-5"
+    fill="currentColor"
+    height="16"
+    viewBox="0 -960 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M200-440v-80h560v80H200Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SvgContainer > should match expected snapshot. color 1`] = `
+<DocumentFragment>
+  <svg
+    class="svg-icon svg-icon--danger"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--disabled"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--info"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--success"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--warning"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--primary"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--ghost"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+  <svg
+    class="svg-icon svg-icon--help"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SvgContainer > should match expected snapshot. data-testid 1`] = `
+<DocumentFragment>
+  <svg
+    class="svg-icon"
+    data-testid="remove-icon"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SvgContainer > should match expected snapshot. default 1`] = `
+<DocumentFragment>
+  <svg
+    class="svg-icon"
+    fill="currentColor"
+    height="16"
+    viewBox="0 -960 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M200-440v-80h560v80H200Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SvgContainer > should match expected snapshot. size 1`] = `
+<DocumentFragment>
+  <div>
+    <svg
+      class="svg-icon svg-icon--md"
+      fill="currentColor"
+      height="16"
+      viewBox="0 96 960 960"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+        stroke="currentColor"
+        stroke-width="12"
+      />
+    </svg>
+    <svg
+      class="svg-icon svg-icon--lg"
+      fill="currentColor"
+      height="16"
+      viewBox="0 96 960 960"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+        stroke="currentColor"
+        stroke-width="12"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SvgContainer > should match expected snapshot. title 1`] = `
+<DocumentFragment>
+  <svg
+    class="svg-icon"
+    fill="currentColor"
+    height="16"
+    viewBox="0 96 960 960"
+    width="16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M431 726q1-72 16.5-105t58.5-72q42-38 64.5-70.5T593 409q0-45-30-75t-84-30q-52 0-80 29.5T358 395l-84-37q22-59 74.5-100.5T479 216q100 0 154 55.5T687 405q0 48-20.5 87T601 574q-49 47-59 72t-11 80H431Zm48 250q-29 0-49.5-20.5T409 906q0-29 20.5-49.5T479 836q29 0 49.5 20.5T549 906q0 29-20.5 49.5T479 976Z"
+      stroke="currentColor"
+      stroke-width="12"
+    />
+    <title>
+      Hello World
+    </title>
+  </svg>
+</DocumentFragment>
+`;
