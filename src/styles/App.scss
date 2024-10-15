@@ -19,6 +19,10 @@ $link-hover-color: $primary;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+// shared
+
+@import 'shared/icon';
+
 // Then add additional custom code here
 
 .app-logo {

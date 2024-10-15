@@ -5,7 +5,7 @@ import Paging from './routes/paging';
 import Buttons from './routes/buttons';
 import Layout from './features/layout';
 
-import './styles.scss';
+import './styles/App.scss';
 
 const App = () => (
   <HashRouter>

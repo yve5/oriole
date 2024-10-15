@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Sun, Moon, CircleHalf } from '../../../features/icons';
+import { LightMode, Contrast, DarkMode } from '../../icons/components';
 import {
   B7P_MODES,
   B7P_MODE_SCHEME,
@@ -38,11 +38,11 @@ const Theme = () => {
     );
   }, [theme, autoTheme]);
 
-  let themeIcon = <Sun />;
+  let themeIcon = <LightMode medium />;
   if (theme === 1) {
-    themeIcon = <Moon />;
+    themeIcon = <DarkMode medium />;
   } else if (theme === 2) {
-    themeIcon = <CircleHalf />;
+    themeIcon = <Contrast medium />;
   }
 
   return (

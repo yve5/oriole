@@ -10,7 +10,7 @@ import SvgContainer from './SvgContainer';
 import en from '../../i18n/dictionaries/en';
 import fr from '../../i18n/dictionaries/fr';
 
-import * as AllIcons from '../../../features/icons';
+import * as AllIcons from '../components';
 
 const mockStore = configureMockStore([thunk]);
 

@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { clsx } from 'clsx';
 
+import * as AllIcons from '../../icons';
 import { I18n } from '../../../shared/i18n';
-import { BoxArrowRight } from '../../icons';
 import { SIDEBAR_LINKS } from '../resources/constants';
 
 const Sidebar = () => {
   const [expanded, setExpanded] = useState(false);
+
   const size = expanded ? 20 : 24;
+  const CollapseIcon = AllIcons[expanded ? 'ChevronLeft' : 'ChevronRight'];
 
   return (
     <div className={clsx('d-none', 'd-lg-flex', 'flex-column', 'border-end')}>
@@ -22,21 +24,32 @@ const Sidebar = () => {
           expanded ? 'p-2' : 'text-center'
         )}
       >
-        {SIDEBAR_LINKS.map(({ active, route, title }) => (
-          <li key={title} className={clsx('nav-item')}>
-            <Link
-              to={route}
-              className={clsx(
-                'nav-link',
-                !expanded && ['py-3', 'border-bottom', 'rounded-0'],
-                { active }
-              )}
-            >
-              <BoxArrowRight width={size} height={size} />
-              {expanded && <I18n>{title}</I18n>}
-            </Link>
-          </li>
-        ))}
+        {SIDEBAR_LINKS.map(({ active, icon, route, title }) => {
+          const Icon = AllIcons[icon];
+
+          return (
+            <li key={title} className={clsx('nav-item')}>
+              <Link
+                to={route}
+                className={clsx(
+                  'nav-link',
+                  !expanded && ['py-3', 'border-bottom', 'rounded-0'],
+                  { active }
+                )}
+              >
+                <I18n title>
+                  <Icon
+                    width={size}
+                    height={size}
+                    title={title}
+                    className={clsx({ 'me-2': expanded })}
+                  />
+                </I18n>
+                {expanded && <I18n>{title}</I18n>}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       <ul
@@ -54,7 +67,12 @@ const Sidebar = () => {
             onClick={() => setExpanded(!expanded)}
             className={clsx('nav-link', !expanded && ['py-3', 'rounded-0'])}
           >
-            <BoxArrowRight width={size} height={size} />
+            <CollapseIcon
+              width={size}
+              height={size}
+              className={clsx({ 'me-2': expanded })}
+            />
+
             {expanded ? (
               <I18n>Collapse</I18n>
             ) : (

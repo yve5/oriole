@@ -1,0 +1,43 @@
+@mixin svg-icon {
+  transform: scale(1.2);
+
+  &--md {
+    transform: scale(1.5);
+  }
+
+  &--lg {
+    transform: scale(2);
+  }
+
+  &--danger {
+    color: $danger;
+  }
+
+  &--disabled {
+    color: $gray-500;
+  }
+
+  &--info {
+    color: $info;
+  }
+
+  &--primary {
+    color: $primary;
+  }
+
+  &--success {
+    color: $success;
+  }
+
+  &--warning {
+    color: $warning;
+  }
+
+  &--help {
+    cursor: help;
+  }
+}
+
+svg.svg-icon {
+  @include svg-icon;
+}

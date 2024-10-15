@@ -1,5 +1,5 @@
 import React from 'react';
-import SvgContainer from '../../../shared/icons';
+import SvgContainer from '..';
 
 // source : https://fonts.google.com/icons
 

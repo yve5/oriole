@@ -1,8 +1,7 @@
-import PowerSettingsNew from './components/PowerSettingsNew';
-import BoxArrowRight from './components/BoxArrowRight';
-import QuestionMark from './components/QuestionMark';
-import CircleHalf from './components/CircleHalf';
-import Moon from './components/Moon';
-import Sun from './components/Sun';
+import RadioButtonChecked from './components/RadioButtonChecked';
+import ChevronRight from './components/ChevronRight';
+import ChevronLeft from './components/ChevronLeft';
+import Logout from './components/Logout';
+import Table from './components/Table';
 
-export { BoxArrowRight, CircleHalf, Moon, Sun, QuestionMark, PowerSettingsNew };
+export { Logout, RadioButtonChecked, Table, ChevronRight, ChevronLeft };

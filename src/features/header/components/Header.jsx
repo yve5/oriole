@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../resources/logo.webp';
 import Theme from '../../../shared/theme';
 
-import { BoxArrowRight } from '../../icons';
+import { Logout } from '../../icons';
 import { LangSwitch } from '../../../shared/i18n';
 
 const Header = () => (
@@ -62,7 +62,7 @@ const Header = () => (
               title="Logout"
               className={clsx('nav-link', 'text-secondary', 'text-white')}
             >
-              <BoxArrowRight />
+              <Logout />
             </button>
           </li>
         </ul>

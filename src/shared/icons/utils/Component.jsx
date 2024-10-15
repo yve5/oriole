@@ -1,10 +1,8 @@
-import * as AllIcons from '../../../features/icons';
+export const getIconComponent = (iconName, icons, skipError = false) => {
+  let result = icons.QuestionMark;
 
-export const getIconComponent = (iconName, skipError = false) => {
-  let result = AllIcons.QuestionMark;
-
-  if (iconName && typeof iconName === 'string' && AllIcons[iconName]) {
-    result = AllIcons[iconName];
+  if (iconName && typeof iconName === 'string' && icons[iconName]) {
+    result = icons[iconName];
   } else {
     const errorMessage = `Not founded icon: ${iconName}`;
 
