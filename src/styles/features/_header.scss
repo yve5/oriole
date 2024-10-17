@@ -1,0 +1,8 @@
+.app-logo {
+  @include media-breakpoint-down(md) {
+    object-position: left;
+    object-fit: cover;
+    height: 32px;
+    width: 32px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { clsx } from 'clsx';
 import { I18n } from '../../../shared/i18n';
+import { formatDate } from '../../../shared/i18n/utils';
 
 const Footer = () => (
   <footer
@@ -10,14 +11,22 @@ const Footer = () => (
       'justify-content-around',
       'align-items-center',
       'py-2',
-      'border-top'
+      'footer__border'
     )}
   >
-    <p className={clsx('col-md-4', 'mb-0', 'p-2', 'text-body-secondary')}>
-      © Oriole, 2024
+    <p className={clsx('col-md-2', 'mb-0', 'p-2', 'text-body-secondary')}>
+      &copy; Oriole, {formatDate(new Date(), 'y')}
     </p>
 
-    <ul className={clsx('nav', 'col-md-4', 'justify-content-end')}>
+    <ul
+      className={clsx(
+        'nav',
+        'col-md-6',
+        'col-xl-4',
+        'justify-content-center',
+        'justify-content-md-end'
+      )}
+    >
       <li className={clsx('nav-item')}>
         <button
           type="button"

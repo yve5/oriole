@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`I18n > should match expected snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <h1>
+      Bonjour le monde
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste similique laborum error veniam, hic est sint debitis adipisci quas fuga, nobis vitae quaerat animi dignissimos consectetur eius quidem labore.
+    </p>
+  </div>
+</DocumentFragment>
+`;

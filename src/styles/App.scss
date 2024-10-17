@@ -23,32 +23,8 @@ $link-hover-color: $primary;
 
 @import 'shared/icon';
 
-// Then add additional custom code here
+// app
 
-.app-logo {
-  @include media-breakpoint-down(md) {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    object-position: left;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    height: 100vh;
-
-    body {
-      height: 100vh;
-
-      #root {
-        height: 100vh;
-
-        .oriole__overflow {
-          overflow: auto;
-          max-height: 94.1vh;
-        }
-      }
-    }
-  }
-}
+@import 'features/layout';
+@import 'features/header';
+@import 'features/footer';

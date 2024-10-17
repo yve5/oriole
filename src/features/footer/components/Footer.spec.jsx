@@ -12,14 +12,15 @@ import i18n from '../../../i18n';
 const mockStore = configureMockStore([thunk]);
 
 describe('Footer', () => {
-  it('renders the component. default', () => {
-    const { asFragment } = render(
+  it('renders the component', () => {
+    const { getByText } = render(
       <Provider store={mockStore({ i18n })}>
         <MemoryRouter>
           <Footer />
         </MemoryRouter>
       </Provider>
     );
-    expect(asFragment()).toMatchSnapshot();
+    expect(getByText('À propos de nous')).toBeDefined();
+    expect(getByText('Journal des modifications')).toBeDefined();
   });
 });

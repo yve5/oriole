@@ -22,21 +22,32 @@ const reducer = (dictionaries, localStorageName = I18N_LOCAL_USER_LANG) => {
   let innerState = { ...initialState };
 
   if (Array.isArray(dictionaries) && dictionaries[0]) {
+    const subDicos = [];
+    dictionaries.forEach((dico) => {
+      if (dico.LANG === en.LANG) {
+        subDicos.push({ ...en, ...dico });
+      } else if (dico.LANG === fr.LANG) {
+        subDicos.push({ ...fr, ...dico });
+      } else {
+        subDicos.push(dico);
+      }
+    });
+
     innerState = {
       ...innerState,
-      dictionaries,
+      dictionaries: subDicos,
       tsl: (term, args) => tsl(dictionaries[0], term, args),
     };
   }
 
   if (localLang) {
-    const innerDicos = innerState.dictionaries;
-    const initialIndex = getIndex(innerDicos, localLang);
+    const subDicos = innerState.dictionaries;
+    const initialIndex = getIndex(subDicos, localLang);
 
     innerState = {
       ...innerState,
       lang: localLang,
-      tsl: (term, args) => tsl(innerDicos[initialIndex], term, args),
+      tsl: (term, args) => tsl(subDicos[initialIndex], term, args),
     };
   }
 

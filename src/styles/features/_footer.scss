@@ -1,0 +1,7 @@
+.footer {
+  &__border {
+    @include media-breakpoint-up(lg) {
+      border-top: 1px solid $border-color;
+    }
+  }
+}
