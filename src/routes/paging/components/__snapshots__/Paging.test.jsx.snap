@@ -6,7 +6,7 @@ exports[`Paging > should match expected snapshot 1`] = `
     class="card"
   >
     <h1>
-      Bonjour le monde
+      Pagination
     </h1>
     <ul
       class="list-group list-group-flush"

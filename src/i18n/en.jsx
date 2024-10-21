@@ -1,8 +1,5 @@
 const I18N_DICTIONARY = {
   LANG: 'en',
-  LANGUAGE: 'English',
-  DATE_FORMAT: 'MM/dd/yyyy',
-  LOCALE: 'enUS',
   'About us': 'About us',
   'An error has been detected. Please try again.':
     'An error has been detected. Please try again.',

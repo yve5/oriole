@@ -1,6 +1,6 @@
 import { I18N_FIRST_TERMS } from '../resources/constants';
 
-export const checkTermOrder = (collection) => {
+export const checkTermOrder = (collection, ignoreFirstTerms = false) => {
   const ordered = [];
 
   Object.keys(collection)
@@ -22,8 +22,9 @@ export const checkTermOrder = (collection) => {
     .map((key) => ordered.push(key));
 
   const formatted = [...ordered];
+  const firstTerms = I18N_FIRST_TERMS.slice(0, ignoreFirstTerms ? 1 : 4);
 
-  I18N_FIRST_TERMS.forEach((term) => {
+  firstTerms.forEach((term) => {
     const termIndex = formatted.indexOf(term);
 
     if (termIndex > -1) {
@@ -33,11 +34,26 @@ export const checkTermOrder = (collection) => {
     }
   });
 
-  return [...I18N_FIRST_TERMS, ...formatted];
+  return [...firstTerms, ...formatted];
 };
 
-export const convertCollectionToArray = (collection) => {
+export const checkLocalTermOrder = (collection) =>
+  checkTermOrder(collection, true);
+
+export const convertCollection = (collection, ignoreFirstTerms = false) => {
   const array = [];
-  Object.keys(collection).map((key) => array.push(key));
+
+  Object.keys(collection).forEach((key) => {
+    if (
+      !ignoreFirstTerms ||
+      (ignoreFirstTerms && !I18N_FIRST_TERMS.slice(1).includes(key))
+    ) {
+      array.push(key);
+    }
+  });
+
   return array;
 };
+
+export const convertLocalCollection = (collection) =>
+  convertCollection(collection, true);

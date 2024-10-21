@@ -1,4 +1,5 @@
 import en from '../dictionaries/en';
+import { I18N_FIRST_TERMS } from '../resources/constants';
 
 export const trim = (localDico) => {
   const alreadyPresent = [];
@@ -9,7 +10,7 @@ export const trim = (localDico) => {
     localDico !== null
   ) {
     Object.keys(localDico).forEach((term) => {
-      if (en[term]) {
+      if (en[term] && !I18N_FIRST_TERMS.includes(term)) {
         alreadyPresent.push(term);
       }
     });

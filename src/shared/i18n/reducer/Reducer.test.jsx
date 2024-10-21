@@ -1,9 +1,11 @@
 import { vi } from 'vitest';
 
 import reducer from './Reducer';
-import en from '../dictionaries/en';
-import fr from '../dictionaries/fr';
 import { changeLang, switchLang } from '../actions/All';
+
+import fr from '../dictionaries/fr';
+import es from '../dictionaries/es';
+import en from '../dictionaries/en';
 
 describe('I18n reducer', () => {
   const localState = {
@@ -19,15 +21,18 @@ describe('I18n reducer', () => {
     expect(innerState.tsl('Yes')).toBe('Yes');
   });
 
-  it('should handle initial state. initialized', () => {
+  it('should handle initial state. french', () => {
     const innerState = reducer([fr, en])();
 
-    expect(innerState).toEqual({
-      ...localState,
-      lang: 'en',
-    });
-
+    expect(innerState).toEqual(localState);
     expect(innerState.tsl('Yes')).toEqual('Oui');
+  });
+
+  it('should handle initial state. spanish', () => {
+    const innerState = reducer([es, fr, en])();
+
+    expect(innerState).toEqual(localState);
+    expect(innerState.tsl('Yes')).toEqual('Sí');
   });
 
   it('should handle I18N_CHANGE_LANG', () => {

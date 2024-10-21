@@ -19,19 +19,17 @@ describe('getIconComponent', () => {
   });
 
   it('should return icon component. not found', () => {
-    expect(getIconComponent('power_settings_new', AllIcons, true)).toEqual(
+    expect(getIconComponent('light_mode', AllIcons, true)).toEqual(
       AllIcons.QuestionMark
     );
   });
 
   it('should match expected snapshot. error', () => {
-    const error = () => getIconComponent('power_settings_new', AllIcons);
-    expect(error).toThrow('Not founded icon: power_settings_new');
+    const error = () => getIconComponent('light_mode', AllIcons);
+    expect(error).toThrow('Not founded icon: light_mode');
   });
 
   it('should return icon component. success', () => {
-    expect(getIconComponent('PowerSettingsNew', AllIcons)).toEqual(
-      AllIcons.PowerSettingsNew
-    );
+    expect(getIconComponent('LightMode', AllIcons)).toEqual(AllIcons.LightMode);
   });
 });

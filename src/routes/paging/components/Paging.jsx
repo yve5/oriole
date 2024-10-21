@@ -4,7 +4,7 @@ import { I18n } from '../../../shared/i18n';
 const Paging = () => (
   <div className="card">
     <h1>
-      <I18n>Hello World</I18n>
+      <I18n>Paging</I18n>
     </h1>
 
     <ul className="list-group list-group-flush">

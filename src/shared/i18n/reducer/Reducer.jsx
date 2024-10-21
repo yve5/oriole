@@ -15,8 +15,10 @@ const initialState = {
 };
 
 const reducer = (dictionaries, localStorageName = I18N_LOCAL_USER_LANG) => {
-  const getIndex = (dicos, lang) =>
-    dicos.findIndex(({ LANG }) => LANG === lang);
+  const getIndex = (dicos, lang) => {
+    const index = dicos.findIndex(({ LANG }) => LANG === lang);
+    return index === -1 ? 0 : index;
+  };
 
   const localLang = localStorage.getItem(localStorageName);
   let innerState = { ...initialState };
@@ -36,7 +38,7 @@ const reducer = (dictionaries, localStorageName = I18N_LOCAL_USER_LANG) => {
     innerState = {
       ...innerState,
       dictionaries: subDicos,
-      tsl: (term, args) => tsl(dictionaries[0], term, args),
+      tsl: (term, args) => tsl(subDicos[0], term, args),
     };
   }
 

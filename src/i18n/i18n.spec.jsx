@@ -12,9 +12,9 @@ import fr from './fr';
 import { I18n } from '../shared/i18n';
 import {
   trim,
-  checkTermOrder,
   checkMissingTerms,
-  convertCollectionToArray,
+  checkLocalTermOrder,
+  convertLocalCollection,
 } from '../shared/i18n/utils';
 
 describe('Local i18n', () => {
@@ -22,19 +22,19 @@ describe('Local i18n', () => {
     expect(i18n.tsl('Hello World')).toEqual('Bonjour le monde');
   });
 
-  it.skip('should detect missing terms', () => {
+  it('should detect missing terms', () => {
     expect(checkMissingTerms(en, fr)).toEqual([]);
   });
 
   it('should check english term order', () => {
-    expect(checkTermOrder(en)).toEqual(convertCollectionToArray(en));
+    expect(checkLocalTermOrder(en)).toEqual(convertLocalCollection(en));
   });
 
   it('should check french term order', () => {
-    expect(checkTermOrder(fr)).toEqual(convertCollectionToArray(fr));
+    expect(checkLocalTermOrder(fr)).toEqual(convertLocalCollection(fr));
   });
 
-  it.skip('should trim local dictionaries', () => {
+  it('should trim local dictionaries', () => {
     expect(trim(en)).toEqual([]);
   });
 
