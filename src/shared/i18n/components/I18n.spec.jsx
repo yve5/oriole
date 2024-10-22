@@ -6,10 +6,11 @@ import { thunk } from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 
-import I18n from './I18n';
 import reducer from '../reducer';
 import en from '../dictionaries/en';
 import fr from '../dictionaries/fr';
+
+import { I18n } from '../../../lib/i18n';
 
 const mockStore = configureMockStore([thunk]);
 

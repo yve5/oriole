@@ -6,10 +6,9 @@ import { Provider } from 'react-redux';
 import { act, fireEvent, render } from '@testing-library/react';
 
 import reducer from '../reducer';
-import LangSwitch from './LangSwitch';
+import { LangSwitch } from '../../../lib/i18n';
 
 const mockStore = configureMockStore([thunk]);
-
 const defaultStore = { i18n: reducer()() };
 
 describe('LangSwitch', () => {

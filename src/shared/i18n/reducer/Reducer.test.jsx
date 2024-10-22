@@ -35,6 +35,22 @@ describe('I18n reducer', () => {
     expect(innerState.tsl('Yes')).toEqual('Sí');
   });
 
+  it('should handle initial state. localLang', () => {
+    const fakeLocalVar = 'FAKE_LOCAL_USER_LANG';
+
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation((key) =>
+      key === fakeLocalVar ? 'es' : null
+    );
+
+    const innerState = reducer([fr, en], fakeLocalVar)();
+
+    expect(innerState).toEqual({
+      ...localState,
+      lang: 'es',
+    });
+    expect(innerState.tsl('Yes')).toEqual('Oui');
+  });
+
   it('should handle I18N_CHANGE_LANG', () => {
     const innerState = reducer()(
       {

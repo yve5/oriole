@@ -26,4 +26,14 @@ describe('trim', () => {
       })
     ).toEqual([]);
   });
+
+  it('should trim local dictionary. alternative translation', () => {
+    expect(
+      trim({
+        Yes: 'Oui alternatif',
+        Paging: 'Pagination',
+        Internationalization: 'Internationalisation',
+      })
+    ).toEqual(['Yes']);
+  });
 });

@@ -6,16 +6,15 @@ import { Provider } from 'react-redux';
 import { act, render } from '@testing-library/react';
 
 import reducer from '../../i18n/reducer';
-import SvgContainer from './SvgContainer';
 import en from '../../i18n/dictionaries/en';
 import fr from '../../i18n/dictionaries/fr';
+import SvgContainer from '../../../lib/icons';
 
 import * as AllIcons from '../components';
 
 const mockStore = configureMockStore([thunk]);
 
 const defaultStore = mockStore({ i18n: reducer([fr, en])() });
-
 const DefaultIcon = AllIcons.QuestionMark;
 
 describe('SvgContainer', () => {
