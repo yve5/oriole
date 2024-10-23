@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LangSelect > should match expected snapshot. default 1`] = `
+<DocumentFragment>
+  <select
+    class="form-select"
+    data-testid="i18n-lang-select"
+  >
+    <option
+      value="en"
+    >
+      English
+    </option>
+    <option
+      value="fr"
+    >
+      Français
+    </option>
+  </select>
+</DocumentFragment>
+`;

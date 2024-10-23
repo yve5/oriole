@@ -2,15 +2,62 @@
 
 exports[`I18n > should match expected snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="card"
+  <h1>
+    Internationalisation
+  </h1>
+  <select
+    class="form-select"
+    data-testid="i18n-lang-select"
   >
-    <h1>
-      Bonjour le monde
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste similique laborum error veniam, hic est sint debitis adipisci quas fuga, nobis vitae quaerat animi dignissimos consectetur eius quidem labore.
-    </p>
-  </div>
+    <option
+      value="fr"
+    >
+      Français
+    </option>
+    <option
+      value="en"
+    >
+      English
+    </option>
+  </select>
+  <ul
+    class="list-group mt-3"
+  >
+    <li
+      class="list-group-item"
+    >
+      Pagination
+    </li>
+    <li
+      class="list-group-item"
+    >
+      Développer
+    </li>
+    <li
+      class="list-group-item"
+    >
+      Boutons
+    </li>
+    <li
+      class="list-group-item"
+    >
+      À propos de nous
+    </li>
+    <li
+      class="list-group-item"
+    >
+      Réduire
+    </li>
+    <li
+      class="list-group-item"
+    >
+      Journal des modifications
+    </li>
+    <li
+      class="list-group-item"
+    >
+      Chargement...
+    </li>
+  </ul>
 </DocumentFragment>
 `;

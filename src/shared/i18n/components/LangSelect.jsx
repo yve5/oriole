@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as All from '../actions/All';
 
 const LangSelect = ({
-  className,
+  className = 'form-select',
   root: {
     i18n: { dictionaries },
   },

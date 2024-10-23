@@ -1,5 +1,3 @@
-import en from '../dictionaries/en';
-import fr from '../dictionaries/fr';
 import { trim } from '.';
 
 describe('trim', () => {

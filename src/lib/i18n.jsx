@@ -1,4 +1,4 @@
-import { I18n, LangSwitch, i18nReducer } from '../shared/i18n';
+import { I18n, LangSelect, LangSwitch, i18nReducer } from '../shared/i18n';
 import {
   trim,
   formatDate,
@@ -13,6 +13,7 @@ export {
   I18n,
   trim,
   formatDate,
+  LangSelect,
   LangSwitch,
   i18nReducer,
   checkTermOrder,

@@ -3,7 +3,7 @@ import configureMockStore from 'redux-mock-store';
 
 import { thunk } from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { act, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import reducer from '../../i18n/reducer';
 import en from '../../i18n/dictionaries/en';

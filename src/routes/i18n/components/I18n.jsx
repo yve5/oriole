@@ -1,17 +1,30 @@
 import React from 'react';
-import { I18n } from '../../../shared/i18n';
+import { I18n, LangSelect } from '../../../shared/i18n';
 
 const I18nPage = () => (
-  <div className="card">
+  <>
     <h1>
-      <I18n>Hello World</I18n>
+      <I18n>Internationalization</I18n>
     </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste
-      similique laborum error veniam, hic est sint debitis adipisci quas fuga,
-      nobis vitae quaerat animi dignissimos consectetur eius quidem labore.
-    </p>
-  </div>
+
+    <LangSelect />
+
+    <ul className="list-group mt-3">
+      {[
+        'Paging',
+        'Expand',
+        'Buttons',
+        'About us',
+        'Collapse',
+        'Changelog',
+        'Loading...',
+      ].map((term) => (
+        <li className="list-group-item" key={term}>
+          <I18n>{term}</I18n>
+        </li>
+      ))}
+    </ul>
+  </>
 );
 
 export default I18nPage;
