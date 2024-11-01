@@ -1,6 +1,6 @@
 {
   "name": "organe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -61,6 +61,7 @@
     "./icons": {
       "import": "./lib/icons.esm.js",
       "require": "./lib/icons.cjs.js"
-    }
+    },
+    "./*": "./lib/*.js"
   }
 }
