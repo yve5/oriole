@@ -1,7 +1,7 @@
 import en from '../dictionaries/en';
 import { I18N_FIRST_TERMS } from '../resources/constants';
 
-export const trim = (localDico) => {
+export const trimTerms = (localDico) => {
   const alreadyPresent = [];
 
   if (

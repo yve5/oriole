@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { fireEvent, render } from '@testing-library/react';
 
 import reducer from '../reducer';
-import { LangSelect } from '../../../lib/i18n';
+import { LangSelect } from '../../../lib';
 
 const mockStore = configureMockStore([thunk]);
 const defaultStore = { i18n: reducer()() };

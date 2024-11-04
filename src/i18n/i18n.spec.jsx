@@ -11,7 +11,7 @@ import fr from './fr';
 
 import { I18n } from '../shared/i18n';
 import {
-  trim,
+  trimTerms,
   checkMissingTerms,
   checkLocalTermOrder,
   convertLocalCollection,
@@ -35,7 +35,7 @@ describe('Local i18n', () => {
   });
 
   it('should trim local dictionaries', () => {
-    expect(trim(en)).toEqual([]);
+    expect(trimTerms(en)).toEqual([]);
   });
 
   it('should match expected snapshot', () => {

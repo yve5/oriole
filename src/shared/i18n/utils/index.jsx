@@ -1,6 +1,6 @@
 import { checkMissingTerms } from './Missing';
 import { formatDate } from './Format';
-import { trim } from './Trim';
+import { trimTerms } from './Trim';
 import {
   checkTermOrder,
   convertCollection,
@@ -9,7 +9,7 @@ import {
 } from './Term';
 
 export {
-  trim,
+  trimTerms,
   formatDate,
   checkTermOrder,
   checkMissingTerms,

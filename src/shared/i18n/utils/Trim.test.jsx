@@ -1,13 +1,13 @@
-import { trim } from '.';
+import { trimTerms } from '.';
 
 describe('trim', () => {
   it('should trim local dictionary. undefined', () => {
-    expect(trim(undefined)).toEqual([]);
+    expect(trimTerms(undefined)).toEqual([]);
   });
 
   it('should trim local dictionary. fail', () => {
     expect(
-      trim({
+      trimTerms({
         Yes: 'Oui',
         Paging: 'Pagination',
         'Hello World': 'Bonjour le monde',
@@ -18,7 +18,7 @@ describe('trim', () => {
 
   it('should trim local dictionary. success', () => {
     expect(
-      trim({
+      trimTerms({
         Paging: 'Pagination',
         Internationalization: 'Internationalisation',
       })
@@ -27,7 +27,7 @@ describe('trim', () => {
 
   it('should trim local dictionary. alternative translation', () => {
     expect(
-      trim({
+      trimTerms({
         Yes: 'Oui alternatif',
         Paging: 'Pagination',
         Internationalization: 'Internationalisation',

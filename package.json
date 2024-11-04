@@ -1,6 +1,6 @@
 {
   "name": "organe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,10 +11,7 @@
     "test": "vitest --coverage",
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d dist",
-    "lib": "npm run lib:index && npm run lib:i18n && npm run lib:icons",
-    "lib:index": "vite build --config vite.config.lib.js",
-    "lib:i18n": "NAME=i18n vite build --config vite.config.lib.js",
-    "lib:icons": "NAME=icons vite build --config vite.config.lib.js"
+    "lib": "vite build --config vite.config.lib.js"
   },
   "peerDependencies": {
     "date-fns": "^3.6.0",
