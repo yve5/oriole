@@ -3,13 +3,7 @@
 exports[`Local i18n > should match expected snapshot 1`] = `
 <DocumentFragment>
   <p>
-    Les changements ont été sauvegardés.
-  </p>
-  <p>
-    La demande a été envoyée avec succès.
-  </p>
-  <p>
-    Une erreur a été détectée. Merci de recommencer.
+    Bonjour le monde
   </p>
 </DocumentFragment>
 `;

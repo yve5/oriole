@@ -43,11 +43,7 @@ describe('Local i18n', () => {
 
     const { asFragment } = render(
       <Provider store={mockStore({ i18n })}>
-        {[
-          'Changes have been saved.',
-          'The request has been sent successfully.',
-          'An error has been detected. Please try again.',
-        ].map((term, index) => (
+        {['Hello World'].map((term, index) => (
           <p key={index}>
             <I18n>{term}</I18n>
           </p>

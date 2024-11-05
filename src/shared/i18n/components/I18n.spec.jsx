@@ -10,7 +10,7 @@ import reducer from '../reducer';
 import en from '../dictionaries/en';
 import fr from '../dictionaries/fr';
 
-import { I18n } from '../../../lib';
+import { I18n } from '../../../lib/i18n';
 
 const mockStore = configureMockStore([thunk]);
 
