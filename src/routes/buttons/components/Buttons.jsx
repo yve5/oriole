@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Confetti from 'canvas-confetti';
 import { clsx } from 'clsx';
 
+import Title from '../../../shared/title';
 import { ORIOLE_BUTTONS } from '../resources/constants';
 
 const ButtonLayer = ({ className = '' }) => (
@@ -39,6 +40,7 @@ const ButtonLayer = ({ className = '' }) => (
 
 const Buttons = () => (
   <>
+    <Title i18n="Buttons" backTo="/" />
     <ButtonLayer className={clsx('btn-sm')} />
     <ButtonLayer className={clsx('btn-sm', 'disabled')} />
   </>

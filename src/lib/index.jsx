@@ -12,10 +12,12 @@ import {
 import SvgContainer, { getIconComponent } from '../shared/icons';
 
 import Theme from '../shared/theme';
+import Title from '../shared/theme';
 
 export {
   I18n,
   Theme,
+  Title,
   LangSelect,
   LangSwitch,
   SvgContainer,

@@ -1,0 +1,39 @@
+@mixin print-style {
+  @media print {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.title {
+  @extend .h2;
+  margin: 0 0 0.875rem 0.625rem;
+  overflow-wrap: break-word;
+  @include print-style;
+
+  &--alone {
+    margin: 2.5rem 0 0.875rem 0.625rem;
+    @include print-style;
+  }
+
+  &--long {
+    cursor: pointer;
+  }
+
+  &--no-print {
+    @extend .d-print-none;
+  }
+
+  &__btn {
+    @extend .btn;
+    @extend .btn-sm;
+    @extend .btn-link;
+    @extend .my-1;
+    @extend .d-print-none;
+  }
+
+  &__icon {
+    @extend .me-2;
+    @extend .svg-icon;
+    @extend .svg-icon--md;
+  }
+}

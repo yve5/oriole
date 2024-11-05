@@ -10,8 +10,7 @@ export default defineConfig({
     outDir: 'lib',
     lib: {
       entry: `src/lib/${name}.jsx`,
-      // formats: ['esm', 'cjs'],
-      formats: ['esm'],
+      formats: ['esm', 'cjs'],
       fileName: (format) => `${name}.${format}.js`,
     },
     rollupOptions: {

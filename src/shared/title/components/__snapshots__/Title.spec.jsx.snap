@@ -1,0 +1,170 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Title > should match expected snapshot. backTo url 1`] = `
+<DocumentFragment>
+  <a
+    class="title__btn"
+    href="/url/example"
+  >
+    <svg
+      class="title__icon"
+      fill="currentColor"
+      height="16"
+      viewBox="0 96 960 960"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"
+        stroke="currentColor"
+        stroke-width="12"
+      />
+    </svg>
+    Retour
+  </a>
+  <h1
+    class="title"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. default 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. empty title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. i18n term 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    Bonjour le monde
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. i18n term and title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    New account
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. long title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone title--long"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit ad modi exercitationem laudantium iure, perspiciatis a quam aliquam assumenda pariatur ratione laborum repellat sapiente rem voluptates quidem eligendi minus?
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. no print 1`] = `
+<DocumentFragment>
+  <a
+    class="title__btn title--no-print"
+    href="/url/example"
+  >
+    <svg
+      class="title__icon"
+      fill="currentColor"
+      height="16"
+      viewBox="0 96 960 960"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"
+        stroke="currentColor"
+        stroke-width="12"
+      />
+    </svg>
+    Retour
+  </a>
+  <h1
+    class="title title--no-print"
+  >
+    Hello World
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. null title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. optional 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn-link btn-sm"
+    type="button"
+  >
+    Export
+  </button>
+  <h1
+    class="title title--alone"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. plain title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    Hello World
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. skeleton 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    <span
+      class="Skeleton Skeleton--title"
+      title="Loading..."
+    />
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title > should match expected snapshot. undefined title 1`] = `
+<DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    ...
+  </h1>
+</DocumentFragment>
+`;

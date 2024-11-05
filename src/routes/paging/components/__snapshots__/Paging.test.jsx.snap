@@ -2,12 +2,14 @@
 
 exports[`Paging > should match expected snapshot 1`] = `
 <DocumentFragment>
+  <h1
+    class="title title--alone"
+  >
+    Pagination
+  </h1>
   <div
     class="card"
   >
-    <h1>
-      Pagination
-    </h1>
     <ul
       class="list-group list-group-flush"
     >

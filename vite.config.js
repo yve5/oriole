@@ -13,13 +13,7 @@ export default defineConfig({
     setupFiles: 'src/setupTests.js',
     coverage: {
       ...configDefaults.coverage,
-      exclude: [
-        ...configDefaults.coverage.exclude,
-        'src/main.jsx',
-        'icons.js',
-        'i18n.js',
-        'lib/**',
-      ],
+      exclude: [...configDefaults.coverage.exclude, 'src/main.jsx', 'lib/**'],
     },
   },
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import { vi } from 'vitest';
 import { act, fireEvent, render } from '@testing-library/react';
 
-import { Theme } from '../../../lib/theme';
+import { Theme } from '../../../lib';
 
 const mockMatchMedia = (matches) => ({
   removeEventListener: vi.fn(),

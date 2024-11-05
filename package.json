@@ -1,6 +1,6 @@
 {
   "name": "organe",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,7 @@
     "date-fns": "^3.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-redux": "^9.1.2",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0"
@@ -44,6 +45,12 @@
     "rollup-plugin-peer-deps-external": "2.2.4",
     "sass": "1.69.5"
   },
-  "main": "lib/i18n.esm.js",
-  "module": "lib/i18n.esm.js"
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.esm.js",
+      "require": "./lib/index.cjs.js"
+    }
+  }
 }
