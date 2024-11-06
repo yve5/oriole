@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { clsx } from 'clsx';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { I18n } from '../../i18n';
 import { truncate } from '../../../tools';
@@ -28,26 +29,13 @@ const Title = ({
     innerTitle = tsl(i18n);
   }
 
-  const btnClassNames = ['title__btn'];
-  if (hideInPrint) {
-    btnClassNames.push('title--no-print');
-  }
-
-  const titleClassNames = ['title'];
-  if (!backTo) {
-    titleClassNames.push('title--alone');
-  }
-  if (hideInPrint) {
-    titleClassNames.push('title--no-print');
-  }
-  if (isSoLong) {
-    titleClassNames.push('title--long');
-  }
-
   return (
     <>
       {backTo && (
-        <Link className={btnClassNames.join(' ')} to={backTo}>
+        <Link
+          to={backTo}
+          className={clsx('title__btn', { 'title--no-print': hideInPrint })}
+        >
           <svg
             width="16"
             height="16"
@@ -70,16 +58,23 @@ const Title = ({
       {optional}
 
       <h1
-        className={titleClassNames.join(' ')}
         onClick={isSoLong ? () => setShow(!show) : undefined}
+        className={clsx(
+          'title',
+          { 'title--alone': !backTo },
+          { 'title--no-print': hideInPrint },
+          { 'title--long': isSoLong }
+        )}
       >
         {innerTitle}
       </h1>
 
       {typeof innerTitle === 'string' && (
-        <Helmet>
-          <title>{innerTitle}</title>
-        </Helmet>
+        <HelmetProvider>
+          <Helmet>
+            <title>{innerTitle}</title>
+          </Helmet>
+        </HelmetProvider>
       )}
     </>
   );

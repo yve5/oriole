@@ -1,6 +1,6 @@
 {
   "name": "organe",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,13 +11,14 @@
     "test": "vitest --coverage",
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d dist",
-    "lib": "vite build --config vite.config.lib.js"
+    "lib": "npm run lib:index && npm run lib:i18n",
+    "lib:index": "vite build --config vite.config.lib.js",
+    "lib:i18n": "NAME=i18n vite build --config vite.config.lib.js"
   },
   "peerDependencies": {
     "date-fns": "^3.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
     "react-redux": "^9.1.2",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0"
@@ -26,6 +27,7 @@
     "bootstrap": "5.3.3",
     "canvas-confetti": "1.9.3",
     "clsx": "2.1.1",
+    "react-helmet-async": "2.0.5",
     "react-router-dom": "6.27.0",
     "redux-mock-store": "1.5.4",
     "vite": "5.4.8",
@@ -51,6 +53,10 @@
     ".": {
       "import": "./lib/index.esm.js",
       "require": "./lib/index.cjs.js"
+    },
+    "./i18n": {
+      "import": "./lib/i18n.esm.js",
+      "require": "./lib/i18n.cjs.js"
     }
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { I18n, LangSelect } from '../../../shared/i18n';
 
+import Title from '../../../shared/title';
+
 const I18nPage = () => (
   <>
-    <h1>
-      <I18n>Internationalization</I18n>
-    </h1>
+    <Title i18n="Internationalization" />
 
     <LangSelect />
 

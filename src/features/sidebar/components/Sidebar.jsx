@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { clsx } from 'clsx';
 
 import * as AllIcons from '../../icons';
@@ -24,17 +24,16 @@ const Sidebar = () => {
           expanded ? 'p-2' : 'text-center'
         )}
       >
-        {SIDEBAR_LINKS.map(({ active, icon, route, title }) => {
+        {SIDEBAR_LINKS.map(({ icon, route, title }) => {
           const Icon = AllIcons[icon];
 
           return (
             <li key={title} className={clsx('nav-item')}>
-              <Link
+              <NavLink
                 to={route}
                 className={clsx(
                   'nav-link',
-                  !expanded && ['py-3', 'border-bottom', 'rounded-0'],
-                  { active }
+                  !expanded && ['py-3', 'border-bottom', 'rounded-0']
                 )}
               >
                 <I18n title>
@@ -46,7 +45,7 @@ const Sidebar = () => {
                   />
                 </I18n>
                 {expanded && <I18n>{title}</I18n>}
-              </Link>
+              </NavLink>
             </li>
           );
         })}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from '../../../shared/title';
-import { I18n } from '../../../shared/i18n';
 
 const Paging = () => (
   <>

@@ -21,7 +21,7 @@ const Layout = () => (
           'oriole__overflow'
         )}
       >
-        <div className={clsx('p-2', 'flex-grow-1', 'container', 'mt-4')}>
+        <div className={clsx('p-2', 'flex-grow-1', 'container')}>
           <Outlet />
         </div>
         <Footer />
