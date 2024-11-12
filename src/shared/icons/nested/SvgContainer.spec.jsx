@@ -5,10 +5,10 @@ import { thunk } from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 
-import SvgContainer from '../../../lib';
 import reducer from '../../i18n/reducer';
 import en from '../../i18n/dictionaries/en';
 import fr from '../../i18n/dictionaries/fr';
+import { SvgContainer } from '../../../lib/icons';
 
 import * as AllIcons from '../components';
 

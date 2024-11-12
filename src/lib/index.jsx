@@ -9,23 +9,14 @@ import {
   convertLocalCollection,
 } from '../shared/i18n/utils';
 
-import SvgContainer, { getIconComponent } from '../shared/icons';
-
-import Theme from '../shared/theme';
-import Title from '../shared/theme';
-
 export {
   I18n,
-  Theme,
-  Title,
   LangSelect,
   LangSwitch,
-  SvgContainer,
   trimTerms,
   formatDate,
   i18nReducer,
   checkTermOrder,
-  getIconComponent,
   checkMissingTerms,
   convertCollection,
   checkLocalTermOrder,

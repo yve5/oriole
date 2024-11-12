@@ -6,8 +6,8 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import { act, fireEvent, render } from '@testing-library/react';
 
-import Title from './Title';
 import i18n from '../../../i18n';
+import { Title } from '../../../lib/title';
 
 const mockStore = configureMockStore([thunk]);
 

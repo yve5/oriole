@@ -1,6 +1,6 @@
 {
   "name": "organe",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,9 +11,12 @@
     "test": "vitest --coverage",
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d dist",
-    "lib": "npm run lib:index && npm run lib:i18n",
+    "lib": "npm run lib:index && npm run lib:index && npm run lib:cvss4 && npm run lib:icons && npm run lib:theme && npm run lib:title",
     "lib:index": "vite build --config vite.config.lib.js",
-    "lib:i18n": "NAME=i18n vite build --config vite.config.lib.js"
+    "lib:cvss4": "NAME=cvss4 vite build --config vite.config.lib.js",
+    "lib:icons": "NAME=icons vite build --config vite.config.lib.js",
+    "lib:theme": "NAME=theme vite build --config vite.config.lib.js",
+    "lib:title": "NAME=title vite build --config vite.config.lib.js"
   },
   "peerDependencies": {
     "date-fns": "^3.6.0",
@@ -21,6 +24,7 @@
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
     "redux": "^5.0.1",
+    "react-router-dom": "^6.27.0",
     "redux-thunk": "^3.1.0"
   },
   "dependencies": {
@@ -28,7 +32,6 @@
     "canvas-confetti": "1.9.3",
     "clsx": "2.1.1",
     "react-helmet-async": "2.0.5",
-    "react-router-dom": "6.27.0",
     "redux-mock-store": "1.5.4",
     "vite": "5.4.8",
     "vite-plugin-eslint": "1.8.1",
@@ -54,9 +57,21 @@
       "import": "./lib/index.esm.js",
       "require": "./lib/index.cjs.js"
     },
-    "./i18n": {
-      "import": "./lib/i18n.esm.js",
-      "require": "./lib/i18n.cjs.js"
+    "./cvss4": {
+      "import": "./lib/cvss4.esm.js",
+      "require": "./lib/cvss4.cjs.js"
+    },
+    "./icons": {
+      "import": "./lib/icons.esm.js",
+      "require": "./lib/icons.cjs.js"
+    },
+    "./theme": {
+      "import": "./lib/theme.esm.js",
+      "require": "./lib/theme.cjs.js"
+    },
+    "./title": {
+      "import": "./lib/title.esm.js",
+      "require": "./lib/title.cjs.js"
     }
   }
 }

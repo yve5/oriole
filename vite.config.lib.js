@@ -14,12 +14,13 @@ export default defineConfig({
       fileName: (format) => `${name}.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'react-router-dom'],
       output: {
         exports: 'named',
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react-router-dom': 'reactRouterDom',
         },
       },
     },
