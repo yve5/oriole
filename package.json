@@ -11,26 +11,23 @@
     "test": "vitest --coverage",
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d dist",
-    "lib": "npm run lib:index && npm run lib:index && npm run lib:cvss4 && npm run lib:icons && npm run lib:theme && npm run lib:title",
-    "lib:index": "vite build --config vite.config.lib.js",
-    "lib:cvss4": "NAME=cvss4 vite build --config vite.config.lib.js",
-    "lib:icons": "NAME=icons vite build --config vite.config.lib.js",
-    "lib:theme": "NAME=theme vite build --config vite.config.lib.js",
-    "lib:title": "NAME=title vite build --config vite.config.lib.js"
+    "lib:build": "vite build --config vite.config.lib.js",
+    "clean": "rimraf lib/logo.svg",
+    "lib": "npm run lib:build && npm run clean"
   },
   "peerDependencies": {
+    "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
-    "redux": "^5.0.1",
     "react-router-dom": "^6.27.0",
+    "redux": "^5.0.1",
     "redux-thunk": "^3.1.0"
   },
   "dependencies": {
     "bootstrap": "5.3.3",
     "canvas-confetti": "1.9.3",
-    "clsx": "2.1.1",
     "react-helmet-async": "2.0.5",
     "redux-mock-store": "1.5.4",
     "vite": "5.4.8",
@@ -47,6 +44,7 @@
     "eslint-config-airbnb": "19.0.4",
     "gh-pages": "6.2.0",
     "jsdom": "25.0.1",
+    "rimraf": "6.0.1",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "sass": "1.69.5"
   },
