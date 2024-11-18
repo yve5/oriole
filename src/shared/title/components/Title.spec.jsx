@@ -7,7 +7,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { act, fireEvent, render } from '@testing-library/react';
 
 import i18n from '../../../i18n';
-import { Title } from '../../../lib/title';
+import { Title } from '../../../lib';
 
 const mockStore = configureMockStore([thunk]);
 

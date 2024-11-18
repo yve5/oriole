@@ -12,10 +12,8 @@
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d dist",
     "lib:build": "vite build --config vite.config.lib.js",
-    "lib:i18n": "NAME=i18n vite build --config vite.config.lib.js",
-    "lib:title": "NAME=title vite build --config vite.config.lib.js",
-    "clean": "rimraf i18n/logo.svg title/logo.svg",
-    "lib": "npm run lib:i18n && npm run lib:title && npm run clean"
+    "clean": "rimraf bin/logo.svg",
+    "lib": "npm run lib:build && npm run clean"
   },
   "peerDependencies": {
     "clsx": "^2.1.1",
@@ -50,16 +48,12 @@
     "rollup-plugin-peer-deps-external": "2.2.4",
     "sass": "1.69.5"
   },
-  "main": "i18n/index.cjs.js",
-  "module": "i18n/index.esm.js",
+  "main": "bin/index.cjs.js",
+  "module": "bin/index.esm.js",
   "exports": {
     ".": {
-      "import": "./i18n/index.esm.js",
-      "require": "./i18n/index.cjs.js"
-    },
-    "./title": {
-      "import": "./title/index.esm.js",
-      "require": "./title/index.cjs.js"
+      "import": "./bin/index.esm.js",
+      "require": "./bin/index.cjs.js"
     }
   }
 }

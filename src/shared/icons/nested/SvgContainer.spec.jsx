@@ -8,9 +8,11 @@ import { render } from '@testing-library/react';
 import reducer from '../../i18n/reducer';
 import en from '../../i18n/dictionaries/en';
 import fr from '../../i18n/dictionaries/fr';
-import { SvgContainer } from '../../../lib/icons';
+import { GlobalSvg } from '../../../lib';
 
 import * as AllIcons from '../components';
+
+const { SvgContainer } = GlobalSvg;
 
 const mockStore = configureMockStore([thunk]);
 

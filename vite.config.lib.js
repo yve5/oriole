@@ -1,16 +1,14 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { defineConfig } from 'vite';
 
-const name = process?.env?.NAME || 'index';
-
 export default defineConfig({
   plugins: [peerDepsExternal()],
   build: {
     emptyOutDir: true,
-    outDir: name,
+    outDir: 'bin',
     lib: {
       formats: ['esm', 'cjs'],
-      entry: `src/lib/${name}.jsx`,
+      entry: 'src/lib/index.jsx',
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
