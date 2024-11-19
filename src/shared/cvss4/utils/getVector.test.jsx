@@ -1,5 +1,5 @@
 import { defaultMetrics } from '../resources/fakeData';
-import { getVector } from '../../../lib/cvss4';
+import { getVector } from '../../../lib';
 
 describe('getVector', () => {
   it('should get vector. undefined', () => {

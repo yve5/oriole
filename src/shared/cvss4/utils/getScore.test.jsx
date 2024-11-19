@@ -1,5 +1,5 @@
 import { defaultMetrics } from '../resources/fakeData';
-import { getScore } from '../../../lib/cvss4';
+import { getScore } from '../../../lib';
 
 describe('getScore', () => {
   it('should handle score. undefined', () => {

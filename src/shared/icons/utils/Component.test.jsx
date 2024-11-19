@@ -1,9 +1,7 @@
 import { vi } from 'vitest';
 
 import * as AllIcons from '../components';
-import { GlobalSvg } from '../../../lib';
-
-const { getIconComponent } = GlobalSvg;
+import { getIconComponent } from '../../../lib';
 
 describe('getIconComponent', () => {
   beforeEach(() => {

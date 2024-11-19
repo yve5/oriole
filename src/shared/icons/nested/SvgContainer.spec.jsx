@@ -8,11 +8,9 @@ import { render } from '@testing-library/react';
 import reducer from '../../i18n/reducer';
 import en from '../../i18n/dictionaries/en';
 import fr from '../../i18n/dictionaries/fr';
-import { GlobalSvg } from '../../../lib';
+import { SvgContainer } from '../../../lib';
 
 import * as AllIcons from '../components';
-
-const { SvgContainer } = GlobalSvg;
 
 const mockStore = configureMockStore([thunk]);
 
@@ -20,7 +18,7 @@ const defaultStore = mockStore({ i18n: reducer([fr, en])() });
 const DefaultIcon = AllIcons.QuestionMark;
 
 describe('SvgContainer', () => {
-  it.skip('should match expected snapshot. default', () => {
+  it('should match expected snapshot. default', () => {
     const { asFragment } = render(
       <Provider store={mockStore(defaultStore)}>
         <SvgContainer>
@@ -31,7 +29,7 @@ describe('SvgContainer', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.skip('should match expected snapshot. className', () => {
+  it('should match expected snapshot. className', () => {
     const { asFragment } = render(
       <Provider store={mockStore(defaultStore)}>
         <SvgContainer className="me-5">

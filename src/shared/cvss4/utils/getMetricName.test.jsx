@@ -1,4 +1,4 @@
-import { getMetricName } from '../../../lib/cvss4';
+import { getMetricName } from '../../../lib';
 
 describe('getMetricName', () => {
   it('should get metric name. undefined', () => {

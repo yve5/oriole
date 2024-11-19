@@ -3,17 +3,53 @@ import Title from '../shared/title';
 
 import SvgContainer, { getIconComponent } from '../shared/icons';
 
-import * as AllI18n from '../shared/i18n';
-import * as AllI18nUtils from '../shared/i18n/utils';
+import { I18n, LangSelect, LangSwitch, i18nReducer } from '../shared/i18n';
+import {
+  trimTerms,
+  formatDate,
+  checkTermOrder,
+  checkMissingTerms,
+  convertCollection,
+  checkLocalTermOrder,
+  convertLocalCollection,
+} from '../shared/i18n/utils';
 
-const GlobalI18n = {
-  ...AllI18nUtils,
-  ...AllI18n,
-};
+import {
+  getScore,
+  getVector,
+  getMetricName,
+  getDefaultMetrics,
+  getMetricOptionName,
+} from '../shared/cvss4';
 
-const GlobalSvg = {
-  getIconComponent,
+export {
+  // title
+  Title,
+
+  // theme
+  Theme,
+
+  // icons
   SvgContainer,
-};
+  getIconComponent,
 
-export { GlobalI18n, GlobalSvg, Theme, Title };
+  // i18n
+  I18n,
+  LangSelect,
+  LangSwitch,
+  i18nReducer,
+  trimTerms,
+  formatDate,
+  checkTermOrder,
+  checkMissingTerms,
+  convertCollection,
+  checkLocalTermOrder,
+  convertLocalCollection,
+
+  // cvss4
+  getScore,
+  getVector,
+  getMetricName,
+  getDefaultMetrics,
+  getMetricOptionName,
+};

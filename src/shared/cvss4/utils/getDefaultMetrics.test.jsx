@@ -1,5 +1,5 @@
-import { getDefaultMetrics } from '../../../lib/cvss4';
 import { defaultMetrics } from '../resources/fakeData';
+import { getDefaultMetrics } from '../../../lib';
 
 describe('getDefaultMetrics', () => {
   it('should initialize metrics', () => {
