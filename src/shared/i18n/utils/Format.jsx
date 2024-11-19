@@ -1,8 +1,10 @@
-import * as allLocales from 'date-fns/locale';
 import { format, formatDistance, parseISO } from 'date-fns';
+import { enUS, fr } from 'date-fns/locale';
+
+import French from '../dictionaries/fr';
 
 export const formatDate = (value, pattern = 'P', localeCode = 'enUS') => {
-  const locale = allLocales[localeCode];
+  const locale = localeCode === French.LANG ? fr : enUS;
   let result = '-';
 
   if (value instanceof Date) {
