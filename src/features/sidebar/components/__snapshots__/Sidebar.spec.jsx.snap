@@ -12,8 +12,7 @@ exports[`Sidebar > renders the component 1`] = `
         class="nav-item"
       >
         <a
-          aria-current="page"
-          class="nav-link py-3 border-bottom rounded-0 active"
+          class="nav-link py-3 border-bottom rounded-0"
           href="/"
         >
           <svg
@@ -136,8 +135,7 @@ exports[`Sidebar > renders the component 2`] = `
         class="nav-item"
       >
         <a
-          aria-current="page"
-          class="nav-link active"
+          class="nav-link"
           href="/"
         >
           <svg

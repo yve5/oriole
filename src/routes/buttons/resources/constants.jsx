@@ -1,3 +1,5 @@
+export const BUTTON_URL_HOME = '/buttons';
+
 export const ORIOLE_BUTTONS = [
   { title: 'Primary', suffix: 'primary' },
   { title: 'Secondary', suffix: 'secondary' },

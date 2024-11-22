@@ -2431,6 +2431,7 @@ const D = {
 };
 export {
   Ie as I18n,
+  Bt as I18nActions,
   To as LangSelect,
   Lo as LangSwitch,
   qe as SvgContainer,

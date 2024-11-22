@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { clsx } from 'clsx';
 
 import * as AllIcons from '../../icons';
@@ -29,7 +29,7 @@ const Sidebar = () => {
 
           return (
             <li key={title} className={clsx('nav-item')}>
-              <NavLink
+              <Link
                 to={route}
                 className={clsx(
                   'nav-link',
@@ -45,7 +45,7 @@ const Sidebar = () => {
                   />
                 </I18n>
                 {expanded && <I18n>{title}</I18n>}
-              </NavLink>
+              </Link>
             </li>
           );
         })}
