@@ -37,6 +37,7 @@ const reducer = (dictionaries, localStorageName = I18N_LOCAL_USER_LANG) => {
     innerState = {
       ...innerState,
       dictionaries: subDicos,
+      lang: subDicos[0].LANG,
       tsl: (term, args) => tsl(subDicos[0], term, args),
     };
   }

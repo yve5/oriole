@@ -1025,6 +1025,7 @@ const D = {
     }), o = {
       ...o,
       dictionaries: a,
+      lang: a[0].LANG,
       tsl: (l, n) => _(a[0], l, n)
     };
   }

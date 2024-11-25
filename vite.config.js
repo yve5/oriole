@@ -22,9 +22,6 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) {
-              return 'vendor-engine';
-            }
             if (id.includes('date-fns')) {
               return 'vendor-date';
             }

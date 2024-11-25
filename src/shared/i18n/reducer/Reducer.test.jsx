@@ -24,14 +24,14 @@ describe('I18n reducer', () => {
   it('should handle initial state. french', () => {
     const innerState = reducer([fr, en])();
 
-    expect(innerState).toEqual(localState);
+    expect(innerState).toEqual({ ...localState, lang: 'fr' });
     expect(innerState.tsl('Yes')).toEqual('Oui');
   });
 
   it('should handle initial state. spanish', () => {
     const innerState = reducer([es, fr, en])();
 
-    expect(innerState).toEqual(localState);
+    expect(innerState).toEqual({ ...localState, lang: 'es' });
     expect(innerState.tsl('Yes')).toEqual('Sí');
   });
 
